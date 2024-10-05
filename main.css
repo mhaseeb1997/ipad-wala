@@ -1,0 +1,107 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Search bar for larger screens */
+  .search-form {
+    flex-grow: 1;
+    max-width: 600px;
+  }
+
+
+  
+  /* Right-side options (cart, sign in, country) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Badge for cart count */
+  .badge {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  /* Second bar (categories) styles */
+  .navbar-nav .nav-link {
+    margin-right: 1.5rem;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 992px) {
+    .search-form {
+      flex-grow: 1;
+      max-width: 400px;
+    }
+  
+    .navbar-right {
+      display: block;
+    }
+  
+    .navbar-nav {
+      flex-wrap: wrap;
+    }
+  
+    .navbar-nav .nav-link {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .search-form {
+      max-width: 100%;
+    }
+  
+    .navbar-right {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .search-form {
+      display: block;
+    }
+  
+    .navbar-right {
+      display: block;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-right .form-select, .navbar-right a {
+      width: 100%;
+    }
+  
+    .navbar-right .form-select {
+      margin-bottom: 1rem;
+    }
+  
+    .navbar-right a {
+      margin-bottom: 0.5rem;
+    }
+  
+    /* Make "All Categories" button full width in mobile */
+    .btn-outline-dark {
+      width: 100%;  /* Ensures full width */
+      text-align: left; /* Aligns the text on the left */
+      padding: 0.75rem;  /* Adds padding to the button */
+    }
+  
+    /* Align center for better appearance */
+    .navbar-nav {
+      justify-content: center;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 0.9rem;
+    }
+  }
+  
