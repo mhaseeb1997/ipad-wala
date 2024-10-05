@@ -76,8 +76,10 @@ body {
   background-color: #444;
 }
 
-.hero-image img {
-  max-width: 100%;
+.heroimage {
+  /* max-width: 100%; */
+
+  width: 350px;
   height: auto;
   border-radius: 20px;
 }
