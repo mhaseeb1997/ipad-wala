@@ -83,5 +83,38 @@ body {
   height: auto;
   border-radius: 20px;
 }
+
+
+/* Feature Section Styling */
+.features {
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+.feature-box {
+  background-color: #fff; /* White background for each feature box */
+  border-radius: 0.5rem; /* Rounded corners for each box */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-box:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+/* Image Styling */
+.feature-box img {
+  max-width: 60px; /* Adjust size of icons */
+  height: auto;
+}
+
+/* Text Styling */
+.feature-box h4 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.feature-box p {
+  color: #666; /* Muted text color for descriptions */
+}
   
  
