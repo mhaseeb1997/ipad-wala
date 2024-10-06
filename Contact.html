@@ -1,101 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+    />
 
-  <!-- First Navbar (Logo, Search, Icons) -->
-  <nav class="navbar navbar-light bg-light py-2 border-bottom">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center w-100">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="your-logo-here.png" alt="IpAD WALE" width="150">
-        </a>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
 
-        <!-- Search bar for larger screens -->
-        <form class="d-flex mx-auto w-50 d-none d-lg-flex">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-        </form>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="Responsive.css" />
+  </head>
+  <body>
+    <!-- First Navbar (Logo, Search, Icons) -->
+    <nav class="navbar navbar-light bg-light py-2 border-bottom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="your-logo-here.png" alt="IpAD WALE" width="150" />
+          </a>
 
-        <!-- Right-side options (hidden on mobile until toggled) -->
-        <div class="navbar-right d-none d-lg-flex align-items-center">
-          <!-- Country select -->
-          <div class="flags d-flex align-items-center">
-            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="Pakistan Flag" width="30" height="20">
+          <!-- Search bar for larger screens -->
+          <form class="d-flex mx-auto w-50 d-none d-lg-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search pre-loved & never-used products"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <!-- Right-side options (hidden on mobile until toggled) -->
+          <div class="navbar-right d-none d-lg-flex align-items-center">
+            <!-- Country select -->
+            <div class="flags d-flex align-items-center">
+              <img
+                src="images/UAEflag.png"
+                alt="UAE Flag"
+                width="30"
+                height="20"
+                class="me-2"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+                alt="Pakistan Flag"
+                width="30"
+                height="20"
+              />
+            </div>
+            <!-- Cart icon -->
+            <a href="#" class="me-3"
+              ><i class="bi bi-cart"></i> Cart
+              <span class="badge bg-danger">0</span></a
+            >
+            <!-- Sign-in -->
+            <a href="#"><i class="bi bi-person"></i> Sign In</a>
           </div>
-          <!-- Cart icon -->
-          <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a>
-          <!-- Sign-in -->
-          <a href="#"><i class="bi bi-person"></i> Sign In</a>
+
+          <!-- Toggle button for mobile view -->
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
-        <!-- Toggle button for mobile view -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Search bar and right-side options for mobile view (inside the collapse) -->
+        <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
+          <form class="d-flex mt-3 w-100">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search pre-loved & never-used products"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <!-- Right-side options for mobile -->
+          <div class="navbar-right d-flex flex-column mt-3">
+            <!-- Country select -->
+            <select
+              class="form-select mb-2"
+              aria-label="Country select"
+              style="width: 100px"
+            >
+              <option selected>UAE</option>
+              <option value="1">KSA</option>
+            </select>
+            <!-- Language icon -->
+            <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a>
+            <!-- Cart icon -->
+            <a href="#" class="mb-2"
+              ><i class="bi bi-cart"></i> Cart
+              <span class="badge bg-danger">0</span></a
+            >
+            <!-- Sign-in -->
+            <a href="#"><i class="bi bi-person"></i> Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Second Navbar (Categories) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Toggle dropdown button for All Categories (mobile) -->
+        <button
+          class="btn btn-outline-dark d-lg-none categorybtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#categoriesMenu"
+          aria-expanded="false"
+          aria-controls="categoriesMenu"
+        >
+          <i class="bi bi-list"></i> All Categories
         </button>
-      </div>
 
-      <!-- Search bar and right-side options for mobile view (inside the collapse) -->
-      <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-        <form class="d-flex mt-3 w-100">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-        </form>
-
-        <!-- Right-side options for mobile -->
-        <div class="navbar-right d-flex flex-column mt-3">
-          <!-- Country select -->
-          <select class="form-select mb-2" aria-label="Country select" style="width: 100px;">
-            <option selected>UAE</option>
-            <option value="1">KSA</option>
-          </select>
-          <!-- Language icon -->
-          <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a>
-          <!-- Cart icon -->
-          <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a>
-          <!-- Sign-in -->
-          <a href="#"><i class="bi bi-person"></i> Sign In</a>
+        <!-- Collapsible Categories Menu for mobile view -->
+        <div class="collapse navbar-collapse" id="categoriesMenu">
+          <ul class="navbar-nav flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Categories</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ipad</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Smartwatches</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">MackBook</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Second Navbar (Categories) -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-      <!-- Toggle dropdown button for All Categories (mobile) -->
-      <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
-        <i class="bi bi-list"></i> All Categories
-      </button>
+    <!-- main section start  -->
 
-      <!-- Collapsible Categories Menu for mobile view -->
-      <div class="collapse navbar-collapse" id="categoriesMenu">
-        <ul class="navbar-nav flex-wrap">
-          <li class="nav-item"><a class="nav-link" href="#">All Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">ipad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Smartwatches</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">MackBook</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li>
-        </ul>
+    <!-- footer section  -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-row">
+            <div class="footer-col">
+              <a href="/">
+                <img src="" alt="logo" class="footer-logo" />
+              </a>
+              <p class="footer-about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsa, quisquam inventore, veniam velit deserunt
+                omnis quia aliquid quasi ratione a tempora maiores laborum?
+             
+              </p>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Services</h3>
+              <ul class="footer-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Contact</a></li>
+                <!-- <li><a href="">Digital Marketing</a></li>
+                <li><a href="">Content Writing</a></li>
+                <li><a href=""> </a></li> -->
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="/">Explore Us</a></li>
+                <li><a href="/about">Who are we?</a></li>
+                <li><a href="/service">Services WE Provide</a></li>
+                <li><a href="/blog">Latest Blog</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Contact</h3>
+              <p class="footer-contact-text">
+                Lorem ipsum dolor  facilis veniam numquam quo iste. Optio, earum explicabo.
+              </p>
+              <ul class="footer-contact-info">
+                <li>
+                  <img src="{EmailVector}" alt="email" />
+                  <a href="mailto:officialcodesbunny@gmail.com"
+                    >&nbsp;ipadwaly@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <img src="{TelePhone}" alt="phone" />
+                  <NavLink to="tel:923080044190">&nbsp;+92 304 5564190</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-title">Follow us</h3>
+              <div class="footer-social">
+                <a href="mailto:@gmail.com" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>© 2024 iPad Wale. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-  </nav>
+    </footer>
 
-  <!-- main section start  -->
-
-  <!-- Optional JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

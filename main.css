@@ -1,8 +1,16 @@
 /* Basic styles */
-body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal overflow */
-  }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    font-family: var(--thm-font);
+    color: var(--thm-gray);
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 500;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* background: linear-gradient(94deg, rgba(7, 15, 17, 0.981) 100%, rgba(7, 15, 17, 0.981) 100%); */
+}
   
   /* Search bar for larger screens */
   .search-form {
@@ -118,3 +126,167 @@ body {
 }
   
  
+
+
+
+
+
+/* css for footer  */
+
+.site-footer {
+  background-color: #4d4d4d;
+  color: #fff;
+  position: relative;
+  background-image: url('../Images/CodesBunny/Ellipse1.png');
+  padding: 40px 0;
+  margin: 70px 60px; /* Reduced margin for smaller screens */
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 0%;
+  animation: moveBackground 3s ease-in-out infinite;
+}
+
+@keyframes moveBackground {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 60% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.footer-container {
+  max-width: 100%; /* Allow full width on small screens */
+  margin: 0 auto;
+  padding: 0 15px; /* Add some padding for smaller screens */
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-col {
+  flex: 1 1 100%; /* Ensure full width on small screens */
+  margin-bottom: 20px;
+  padding: 10px; /* Reduced padding for smaller screens */
+}
+
+.footer-logo {
+  max-width: 120px; /* Adjust logo size for small screens */
+  width: 100%; /* Ensure logo is responsive */
+  margin-bottom: 15px;
+}
+
+.footer-title {
+  font-size: 16px; /* Adjust font size for better readability */
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-links,
+.footer-contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact-info li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a,
+.footer-contact-info li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size */
+}
+
+
+.footer-social {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-social a {
+  background-color: #f2f2f2; /* Light background for the circle */
+  border-radius: 50%; /* Makes the background a circle */
+  padding: 15px; /* Spacing around the icon */
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social a:hover {
+  background-color: #a09f9f; /* Hover effect */
+  
+}
+
+.footer-social i {
+  font-size: 24px; /* Icon size */
+  color: #2b2b2b; /* Icon color */
+}
+
+
+
+
+/* .footer-social {
+  display: flex;
+  justify-content: flex-start; 
+  flex-wrap: wrap; 
+} */
+
+/* .footer-social a {
+  margin: 5px; 
+  font-size: 14px; 
+  height: 40px; 
+  width: 40px; 
+  transition: all 500ms ease;
+} */
+
+/* .footer-social a:hover {
+  transform: rotate(360deg);
+} */
+
+/* .footer-social img {
+  max-width: 100%; 
+  height: auto; 
+} */
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px; /* Adjust font size for footer text */
+  border-top: 1px dotted #444;
+  padding-top: 10px; /* Reduce padding for smaller screens */
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
