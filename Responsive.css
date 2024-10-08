@@ -272,3 +272,28 @@
     font-size: 1.3rem;
   }
 }
+
+
+
+/* <!-- product section  --> */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .product-card {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .product-card {
+    max-width: 160px;
+  }
+}
