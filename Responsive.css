@@ -327,3 +327,23 @@
   }
 }
 
+/* STYLING FOR ADD ON AND ABOUT  */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-image-card,
+  .product-info-card {
+    margin-bottom: 20px;
+  }
+
+  .product-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-title {
+    font-size: 1.2rem;
+  }
+}
+

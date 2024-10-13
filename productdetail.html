@@ -23,6 +23,8 @@
 
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="Responsive.css" />
+
+    
   </head>
   <body>
     <!-- First Navbar (Logo, Search, Icons) -->
@@ -169,12 +171,12 @@
             <!-- Image Gallery -->
             <div class="col-md-6 product-detail-image-gallery">
                 <img src="images/applewatch.jpg" alt="iPhone 14 Pro Max" class="img-fluid product-detail-main-image">
-                <div class="d-flex justify-content-center mt-3 product-detail-thumbnail-gallery">
+                <!-- <div class="d-flex justify-content-center mt-3 product-detail-thumbnail-gallery">
                     <img src="images/smwatch.jpg" alt="Thumbnail 1" class="img-thumbnail product-detail-thumbnail">
                     <img src="images/applewatch.jpg" alt="Thumbnail 2" class="img-thumbnail product-detail-thumbnail">
                     <img src="images/ultrawatch.jpg" alt="Thumbnail 3" class="img-thumbnail product-detail-thumbnail">
                     <img src="images/smwatch.jpg" alt="Thumbnail 4" class="img-thumbnail product-detail-thumbnail">
-                </div>
+                </div> -->
             </div>
             
             <!-- Product Details -->
@@ -232,6 +234,70 @@
             </div>
         </div>
     </div>
+
+
+
+<!-- IMFORMATION AND ADDONS -->
+<div class="container mt-4 product-section">
+  <div class="row">
+    <!-- Product Image and Details Card -->
+    <div class="col-lg-7 col-md-12 mb-4">
+      <div class="card product-image-card shadow-lg"> <!-- Added shadow-lg for large shadow -->
+        <div class="card-body">
+          <h5 class="card-title">Product Overview</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Features and Specifications</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin auctor nisi ut orci fermentum, id commodo libero condimentum.</p>
+          <p class="card-text">Aliquam convallis, ligula vel viverra sodales, elit massa cursus ex, nec consectetur justo mauris eu nulla.</p>
+          <p class="card-text">Curabitur vel erat vitae sapien dapibus ullamcorper ac non erat.</p>
+          <p class="card-text">Integer vitae elit a odio placerat volutpat non sit amet magna.</p>
+          <p class="card-text">Nulla facilisi. Sed ultricies vel velit nec hendrerit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Details with Addon Options -->
+    <div class="col-lg-5 col-md-12">
+      <div class="card product-info-card shadow-lg">
+        <h2 class="addon-title">Add Ons</h2>
+
+        <!-- Addon Item 1 -->
+        <div class="addon-item d-flex justify-content-between align-items-start">
+          <div class="addon-left">
+            <input type="checkbox" id="extendedWarranty" name="addon" value="warranty">
+            <label for="extendedWarranty" class="addon-label">1-Year Extended Warranty Plan</label>
+            <p class="addon-description">
+              1-Year Extended Warranty: 12-months extra coverage, quick repairs, free pick-up, and replacements.
+            </p>
+          </div>
+          <div class="addon-right " style="margin: 10px;">
+            <span class="addon-price">AED 93.45</span>
+          </div>
+        </div>
+
+        <hr> <!-- Divider between add-ons -->
+
+        <!-- Addon Item 2 -->
+        <div class="addon-item d-flex justify-content-between align-items-start">
+          <div class="addon-left">
+            <input type="checkbox" id="giftWrap" name="addon" value="giftwrap">
+            <label for="giftWrap" class="addon-label">Gift Wrap</label>
+            <p class="addon-description">
+              We offer neat and attractive wrapping for your items, perfect for gifting. Choose this option at checkout to have your...
+            </p>
+          </div>
+          <div class="addon-right" style="margin: 10px;">
+            <span class="addon-price">AED 29.40</span>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
 
 
 

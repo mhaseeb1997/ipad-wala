@@ -592,7 +592,59 @@ body {
   width: 100%;
 }
 
+/* STYLING FOR ADD ON AND DETAIL  */
+/* General styling for product section */
 
+.product-image-card, .product-info-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for shadow */
+.product-image-card:hover, .product-info-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+.product-section {
+  padding: 20px;
+}
+
+/* Product Image Card */
+.product-image-card {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.product-image-card .card-body {
+  padding: 20px;
+}
+
+/* Product Info Card */
+.product-info-card {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Product Title */
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Addon Items */
+.addon-section {
+  margin-top: 20px;
+}
+
+.addon-item {
+  margin-bottom: 15px;
+}
+
+.addon-description {
+  font-size: 0.9rem;
+  color: #666;
+}
 
 
 
