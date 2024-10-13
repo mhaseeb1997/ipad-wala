@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="Responsive.css" />
+  </head>
+  <body>
+    <!-- First Navbar (Logo, Search, Icons) -->
+    <nav class="navbar navbar-light bg-light py-2 border-bottom">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="your-logo-here.png" alt="IpAD WALE" width="150" />
+          </a>
+
+          <!-- Search bar for larger screens -->
+          <form class="d-flex mx-auto w-50 d-none d-lg-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search pre-loved & never-used products"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <!-- Right-side options (hidden on mobile until toggled) -->
+          <div class="navbar-right d-none d-lg-flex align-items-center">
+            <!-- Country select -->
+            <div class="flags d-flex align-items-center">
+              <img
+                src="images/UAEflag.png"
+                alt="UAE Flag"
+                width="30"
+                height="20"
+                class="me-2"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+                alt="Pakistan Flag"
+                width="30"
+                height="20"
+              />
+            </div>
+            <!-- Cart icon -->
+            <a href="#" class="me-3"
+              ><i class="bi bi-cart"></i> Cart
+              <span class="badge bg-danger">0</span></a
+            >
+            <!-- Sign-in -->
+            <a href="#"><i class="bi bi-person"></i> Sign In</a>
+          </div>
+
+          <!-- Toggle button for mobile view -->
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Search bar and right-side options for mobile view (inside the collapse) -->
+        <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
+          <form class="d-flex mt-3 w-100">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search pre-loved & never-used products"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <!-- Right-side options for mobile -->
+          <div class="navbar-right d-flex flex-column mt-3">
+            <!-- Country select -->
+            <select
+              class="form-select mb-2"
+              aria-label="Country select"
+              style="width: 100px"
+            >
+              <option selected>UAE</option>
+              <option value="1">KSA</option>
+            </select>
+            <!-- Language icon -->
+            <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a>
+            <!-- Cart icon -->
+            <a href="#" class="mb-2"
+              ><i class="bi bi-cart"></i> Cart
+              <span class="badge bg-danger">0</span></a
+            >
+            <!-- Sign-in -->
+            <a href="#"><i class="bi bi-person"></i> Sign In</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Second Navbar (Categories) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Toggle dropdown button for All Categories (mobile) -->
+        <button
+          class="btn btn-outline-dark d-lg-none categorybtn"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#categoriesMenu"
+          aria-expanded="false"
+          aria-controls="categoriesMenu"
+        >
+          <i class="bi bi-list"></i> All Categories
+        </button>
+
+        <!-- Collapsible Categories Menu for mobile view -->
+        <div class="collapse navbar-collapse" id="categoriesMenu">
+          <ul class="navbar-nav flex-wrap">
+            <li class="nav-item">
+              <a class="nav-link" href="#">All Categories</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ipad</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Smartwatches</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">MackBook</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section start  -->
+    <div class="container mt-4 product-detail-section">
+        <div class="row">
+            <!-- Image Gallery -->
+            <div class="col-md-6 product-detail-image-gallery">
+                <img src="images/applewatch.jpg" alt="iPhone 14 Pro Max" class="img-fluid product-detail-main-image">
+                <div class="d-flex justify-content-center mt-3 product-detail-thumbnail-gallery">
+                    <img src="images/smwatch.jpg" alt="Thumbnail 1" class="img-thumbnail product-detail-thumbnail">
+                    <img src="images/applewatch.jpg" alt="Thumbnail 2" class="img-thumbnail product-detail-thumbnail">
+                    <img src="images/ultrawatch.jpg" alt="Thumbnail 3" class="img-thumbnail product-detail-thumbnail">
+                    <img src="images/smwatch.jpg" alt="Thumbnail 4" class="img-thumbnail product-detail-thumbnail">
+                </div>
+            </div>
+            
+            <!-- Product Details -->
+            <div class="col-md-6 product-detail-details">
+                <h1 class="product-detail-title">Apple iPhone 14 Pro Max 512GB - Deep Purple</h1>
+                <p class="product-detail-price text-success">AED 3,289.00</p>
+                <p class="product-detail-retail-price">
+                    <del>AED 5,900.00</del> 
+                    <span class="product-detail-discount text-danger">44% less vs. new</span>
+                </p>
+                <p class="product-detail-stock-info text-danger">Limited stock: only 1 left - order now.</p>
+    
+                <!-- Condition Buttons -->
+                <div class="btn-group d-flex product-detail-condition mb-3" role="group">
+                    <button type="button" class="btn btn-outline-secondary active">Pre-Loved | Top</button>
+                    <button type="button" class="btn btn-outline-secondary">Pre-Loved | Good</button>
+                </div>
+    
+                <!-- Color Options -->
+                <div class="mb-3 product-detail-color-options">
+                    <span>Color: </span>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active">Deep Purple</button>
+                        <button type="button" class="btn btn-outline-primary">Gold</button>
+                        <button type="button" class="btn btn-outline-primary">Silver</button>
+                        <button type="button" class="btn btn-outline-primary">Space Black</button>
+                    </div>
+                </div>
+    
+                <!-- Storage Options -->
+                <div class="mb-3 product-detail-storage-options">
+                    <span>Size: </span>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary">128 GB</button>
+                        <button type="button" class="btn btn-outline-primary">256 GB</button>
+                        <button type="button" class="btn btn-outline-primary active">512 GB</button>
+                    </div>
+                </div>
+    
+                <!-- Shipping & Warranty Info -->
+                <div class="mb-3 product-detail-shipping-info">
+                    <p><i class="bi bi-truck"></i> <a href="#"  id="openshiping" >Delivery in 3-5 business days</a></p>
+                    <p><i class="bi bi-arrow-counterclockwise"></i> <a href="#" id="openreturn" >10 Days Return</a></p>
+                
+                </div>
+    
+                <div class="mb-3 product-detail-warranty-info">
+                    <p><i class="bi bi-shield-check"></i> <a href="#" id="openwarranty"  >12 Months Warranty</a></p>
+                    <!-- <p><i class="bi bi-check-circle"></i> <a href="#" id="openmobcheck"  data-bs-toggle="modal" data-bs-target="#mobocheckModal">MoboCheck Guarantee</a></p> -->
+
+                </div>
+    
+                <!-- Add to Cart Button -->
+                <button class="btn btn-primary btn-block product-detail-add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- all models  -->
+
+    <!-- Shipping Modal -->
+    <div id="popupshiping" class="modal">
+        <div class="modal-content">
+            <button type="button" class="closeshiping" aria-label="Close">&times;</button>
+    
+            <div class="popup-header">
+                <h3>Shipping Information</h3>
+            </div>
+    
+            <div class="modal-body">
+                Your product will be delivered within 3-5 business days. Please note that delivery times may vary based on your location.
+            </div>
+    
+            <!-- Social Media Icons with Links -->
+            <div class="social-signin">
+                <div class="or-divider">OR</div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon facebook-icon" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon instagram-icon" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="mailto:support@example.com" class="social-icon email-icon" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="social-icon whatsapp-icon" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+
+
+
+
+
+
+<!-- Return Modal -->
+
+<div id="popupreturn" class="modal">
+    <div class="modal-content">
+        <button type="button" class="closereturn" aria-label="Close">&times;</button>
+
+        <div class="popup-header">
+            <h3>Return Policy</h3>
+        </div>
+
+        <div class="modal-body">
+            You can return the product within 10 days of delivery. The product must be in its original condition.
+        </div>
+
+        <!-- Social Media Icons with Links -->
+        <div class="social-signin">
+            <div class="or-divider">OR</div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook-icon" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram-icon" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:support@example.com" class="social-icon email-icon" aria-label="Email">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="social-icon whatsapp-icon" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Warranty Modal -->
+<div id="popupWarranty" class="modal">
+    <div class="modal-content">
+        <button type="button" class="closeWarranty" aria-label="Close">&times;</button>
+
+        <div class="popup-header">
+            <h3>Warranty Policy</h3>
+        </div>
+
+        <div class="modal-body">
+            You can return the product within 10 days of delivery. The product must be in its original condition.
+        </div>
+
+        <!-- Social Media Icons with Links -->
+        <div class="social-signin">
+            <div class="or-divider">OR</div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook-icon" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram-icon" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:support@example.com" class="social-icon email-icon" aria-label="Email">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank" class="social-icon whatsapp-icon" aria-label="WhatsApp">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+
+    <!-- footer section  -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-row">
+            <div class="footer-col">
+              <a href="/">
+                <img src="" alt="logo" class="footer-logo" />
+              </a>
+              <p class="footer-about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsa, quisquam inventore, veniam velit deserunt
+                omnis quia aliquid quasi ratione a tempora maiores laborum?
+             
+              </p>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Services</h3>
+              <ul class="footer-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Contact</a></li>
+                <!-- <li><a href="">Digital Marketing</a></li>
+                <li><a href="">Content Writing</a></li>
+                <li><a href=""> </a></li> -->
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="/">Explore Us</a></li>
+                <li><a href="/about">Who are we?</a></li>
+                <li><a href="/service">Services WE Provide</a></li>
+                <li><a href="/blog">Latest Blog</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+            </div>
+    
+            <div class="footer-col">
+              <h3 class="footer-title">Contact</h3>
+              <p class="footer-contact-text">
+                Lorem ipsum dolor  facilis veniam numquam quo iste. Optio, earum explicabo.
+              </p>
+              <ul class="footer-contact-info">
+                <li>
+                  <img src="{EmailVector}" alt="email" />
+                  <a href="mailto:officialcodesbunny@gmail.com"
+                    >&nbsp;ipadwaly@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <img src="{TelePhone}" alt="phone" />
+                  <NavLink to="tel:923080044190">&nbsp;+92 304 5564190</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3 class="footer-title">Follow us</h3>
+              <div class="footer-social">
+                <a href="mailto:@gmail.com" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>© 2024 iPad Wale. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        // Get modal for shiping
+        var modal = document.getElementById("popupshiping");
+        var btn = document.getElementById("openshiping");
+        var closeBtn = document.getElementsByClassName("closeshiping")[0];
+        
+        // Open modal on button click
+        btn.onclick = function () {
+          modal.style.display = "flex";
+        }
+        
+        // Close modal when the 'x' is clicked
+        closeBtn.onclick = function () {
+          modal.style.display = "none";
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+
+
+
+            // Get modal for return
+        var modalret = document.getElementById("popupreturn");
+        var btnret = document.getElementById("openreturn");
+        var closeBtnret = document.getElementsByClassName("closereturn")[0];
+        
+        // Open modal on button click
+        btnret.onclick = function () {
+            modalret.style.display = "flex";
+        }
+        
+        // Close modal when the 'x' is clicked
+        closeBtnret.onclick = function () {
+            modalret.style.display = "none";
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == modalret) {
+            modalret.style.display = "none";
+          }
+        }
+
+
+        // Get modal for return <!-- Warranty Modal -->
+        var modalwarr = document.getElementById("popupWarranty");
+        var btnwarr = document.getElementById("openwarranty");
+        var closeBtnwarr = document.getElementsByClassName("closeWarranty")[0];
+        
+        // Open modal on button click
+        btnwarr.onclick = function () {
+            modalwarr.style.display = "flex";
+        }
+        
+        // Close modal when the 'x' is clicked
+        closeBtnwarr.onclick = function () {
+            modalwarr.style.display = "none";
+        }
+        
+        // Close modal when clicking outside of it
+        window.onclick = function (event) {
+          if (event.target == modalwarr) {
+            modalwarr.style.display = "none";
+          }
+        }
+
+        
+        </script>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

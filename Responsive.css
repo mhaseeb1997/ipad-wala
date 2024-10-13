@@ -297,3 +297,33 @@
     max-width: 160px;
   }
 }
+
+
+/* responsive product detail css  */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-detail-section {
+      flex-direction: column;
+  }
+
+  .product-detail-image-gallery {
+      margin-bottom: 20px;
+  }
+
+  .product-detail-details {
+      text-align: center;
+  }
+
+  .product-detail-condition-button,
+  .product-detail-color-button,
+  .product-detail-storage-button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .product-detail-add-to-cart {
+      width: 100%;
+  }
+}
+
