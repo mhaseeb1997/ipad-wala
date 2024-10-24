@@ -12,6 +12,9 @@ body {
   /* background: linear-gradient(94deg, rgba(7, 15, 17, 0.981) 100%, rgba(7, 15, 17, 0.981) 100%); */
 }
 
+
+
+
 /* Search bar for larger screens */
 .search-form {
   flex-grow: 1;
@@ -81,6 +84,12 @@ body {
   background-color: #444;
 }
 
+
+/* herro section slider */
+
+
+
+
 .heroimage {
   /* max-width: 100%; */
 
@@ -124,13 +133,13 @@ body {
 /* css for footer  */
 
 .site-footer {
-  background-color: #4d4d4d;
-  color: #fff;
+  background-color: #807f7f;
+  color: #0f0f0f;
   position: relative;
   background-image: url("../Images/CodesBunny/Ellipse1.png");
-  padding: 40px 0;
-  margin: 70px 60px; /* Reduced margin for smaller screens */
-  border-radius: 30px;
+  padding: 20px 0 0 0;
+ 
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -176,8 +185,8 @@ body {
 .footer-title {
   font-size: 16px; /* Adjust font size for better readability */
   margin-bottom: 15px;
-  color: #ffffff;
-  font-weight: 600;
+  color: #1a1919;
+  font-weight: 700;
 }
 
 .footer-links,
@@ -194,7 +203,7 @@ body {
 
 .footer-links li a,
 .footer-contact-info li a {
-  color: #fff;
+  color: #1a1919;
   text-decoration: none;
   font-size: 14px; /* Adjust font size */
 }
