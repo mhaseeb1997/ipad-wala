@@ -27,88 +27,88 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light py-2 border-bottom">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center w-100">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="images/applelogo.png" alt="IpAD WALE" width="150">
-          </a>
-  
-          <!-- Search bar for larger screens -->
-          <form class="d-flex mx-auto w-50 d-none d-lg-flex">
-            <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-          </form>
-  
-          <!-- Right-side options (hidden on mobile until toggled) -->
-          <div class="navbar-right d-none d-lg-flex align-items-center">
-            <!-- Country select -->
-            <div class="flags d-flex align-items-center">
-              <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-            </div>
-            <!-- Cart icon -->
-            <!-- <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-            <!-- Sign-in -->
-            
-            <a href="#" id="openPopup" class="btn btn-dark btn-md"><i class="bi bi-person"></i> Sign In</a>
+   <!-- First Navbar (Logo, Search, Icons) -->
+   <nav class="navbar navbar-light bg-light py-2 border-bottom">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/applelogo.png" alt="IpAD WALE" width="150">
+        </a>
+
+        <!-- Search bar for larger screens -->
+        <form class="d-flex mx-auto w-50 d-none d-lg-flex">
+          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <!-- Right-side options (hidden on mobile until toggled) -->
+        <div class="navbar-right d-none d-lg-flex align-items-center">
+          <!-- Country select -->
+          <div class="flags d-flex align-items-center">
+            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
           </div>
-  
-          <!-- Toggle button for mobile view -->
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <!-- Cart icon -->
+          <!-- <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
+          <!-- Sign-in -->
+          
+          <a href="registration.html"  class="btn btn-dark btn-md"><i class="bi bi-person"></i> Sign In</a>
         </div>
-  
-        <!-- Search bar and right-side options for mobile view (inside the collapse) -->
-        <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-          <form class="d-flex mt-3 w-100">
-            <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-          </form>
-  
-          <!-- Right-side options for mobile -->
-          <div class="navbar-right d-flex flex-column mt-3">
-            <!-- Country select -->
-            <div class="flags d-flex align-items-center">
-              <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-            </div>
-            <!-- Language icon -->
-            <!-- <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a> -->
-            <!-- Cart icon -->
-            <!-- <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-            <!-- Sign-in -->
-            <a href="#"><i class="bi bi-person" class="btn btn-dark btn-md"></i> Sign In</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  
-      
-       <!-- Second Navbar (Categories) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Toggle dropdown button for All Categories (mobile) -->
-        <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
-          <i class="bi bi-list"></i> All Categories
+
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-  
-        <!-- Collapsible Categories Menu for mobile view -->
-        <div class="collapse navbar-collapse" id="categoriesMenu">
-          <ul class="navbar-nav flex-wrap">
-            <li class="nav-item"><a class="nav-link" href="#">All Categories</a></li>
-            <li class="nav-item"><a class="nav-link" href="/product.html">ipad</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="/product.html">Smartwatches</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="/product.html">MackBook</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li> -->
-          </ul>
+      </div>
+
+      <!-- Search bar and right-side options for mobile view (inside the collapse) -->
+      <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
+        <form class="d-flex mt-3 w-100">
+          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <!-- Right-side options for mobile -->
+        <div class="navbar-right d-flex flex-column mt-3">
+          <!-- Country select -->
+          <div class="flags d-flex align-items-center">
+            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
+          </div>
+          <!-- Language icon -->
+          <!-- <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a> -->
+          <!-- Cart icon -->
+          <!-- <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
+          <!-- Sign-in -->
+          <a href="registration.html"><i class="bi bi-person" class="btn btn-dark btn-md"></i> Sign In</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+  <!-- Second Navbar (Categories) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Toggle dropdown button for All Categories (mobile) -->
+      <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
+        <i class="bi bi-list"></i> All Categories
+      </button>
+
+      <!-- Collapsible Categories Menu for mobile view -->
+      <div class="collapse navbar-collapse" id="categoriesMenu">
+        <ul class="navbar-nav flex-wrap">
+          <li class="nav-item"><a class="nav-link" href="#">All Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="/product.html">ipad</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="/product.html">Smartwatches</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="/product.html">MackBook</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!-- main section start  -->
     <div class="container mt-4 product-detail-section">

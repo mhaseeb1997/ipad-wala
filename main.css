@@ -973,3 +973,87 @@ body {
 }
 
 
+/* registration page css */
+
+.login-container {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0069d9;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.social-login a {
+  width: 48%;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.facebook {
+  background-color: #3b5998;
+  width: 100%; text-align: left;
+  color: white;
+}
+
+.google {
+  border: 2px solid rgb(221, 220, 220);
+  width: 100%; text-align: left;
+}
+
+.captcha {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #0069d9;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
