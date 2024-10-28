@@ -1028,12 +1028,24 @@ body {
 }
 
 .facebook {
-  background-color: #3b5998;
+  background-color: #476fc5;
+  width: 100%; text-align: left;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #284177;
   width: 100%; text-align: left;
   color: white;
 }
 
 .google {
+  border: 2px solid rgb(221, 220, 220);
+  width: 100%; text-align: left;
+}
+
+.google:hover {
+  background-color: #f50707c2;
   border: 2px solid rgb(221, 220, 220);
   width: 100%; text-align: left;
 }
