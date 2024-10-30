@@ -155,18 +155,39 @@
     <div class="row">
       <!-- Image Gallery -->
       <div class="col-md-6 product-detail-image-gallery">
-        <div class="carousel">
-          <img src="images/smwatch.jpg" alt="Image 1" class="active">
-          <img src="images/smwatch.jpg" alt="Image 2">
-          <img src="images/applewatch.jpg" alt="Image 3">
-          <img src="images/ultrawatch.jpg" alt="Image 4">
-          <img src="images/applewatch.jpg" alt="Image 5">
-
-          <div class="carousel-buttons">
-            <button class="carousel-button" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-button" onclick="nextSlide()">&#10095;</button>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="  mt-3  product-detail-thumbnail-gallery">
+              <img src="images/smwatch.jpg" alt="Thumbnail 1" class="img-thumbnail product-detail-thumbnail"
+                data-index="0" onclick="goToSlide(0)" onmouseover="previewSlide(0)" onmouseout="resetSlide()">
+              <img src="images/applewatch.jpg" alt="Thumbnail 2" class="img-thumbnail product-detail-thumbnail"
+                data-index="1" onclick="goToSlide(1)" onmouseover="previewSlide(1)" onmouseout="resetSlide()">
+              <img src="images/ultrawatch.jpg" alt="Thumbnail 3" class="img-thumbnail product-detail-thumbnail"
+                data-index="2" onclick="goToSlide(2)" onmouseover="previewSlide(2)" onmouseout="resetSlide()">
+              <img src="images/smwatch.jpg" alt="Thumbnail 4" class="img-thumbnail product-detail-thumbnail"
+                data-index="3" onclick="goToSlide(3)" onmouseover="previewSlide(3)" onmouseout="resetSlide()">
+              <img src="images/applelogo.png" alt="Thumbnail 5" class="img-thumbnail product-detail-thumbnail"
+                data-index="4" onclick="goToSlide(4)" onmouseover="previewSlide(4)" onmouseout="resetSlide()">
+              <img src="images/ultrawatch.jpg" alt="Thumbnail 6" class="img-thumbnail product-detail-thumbnail"
+                data-index="5" onclick="goToSlide(5)" onmouseover="previewSlide(5)" onmouseout="resetSlide()">
+            </div>
           </div>
+          <div class="col-md-10">
+            <div class="carousel">
+              <img id="carouselImage" src="images/smwatch.jpg" alt="Carousel Image" class="active">
+
+              <div class="carousel-buttons">
+                <button class="carousel-button" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-button" onclick="nextSlide()">&#10095;</button>
+              </div>
+            </div>
+          </div>
+
+
         </div>
+
+
+
       </div>
 
       <!-- Product Details -->
@@ -614,23 +635,44 @@
       window.open("https://wa.me/923150891475", "_blank"); // Replace with your WhatsApp number
     }
 
+
+
     let currentSlide = 0;
-    const slides = document.querySelectorAll(".carousel img");
+    const carouselImage = document.getElementById("carouselImage");
+    const thumbnails = document.querySelectorAll(".product-detail-thumbnail");
 
     function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
+      currentSlide = index;
+      carouselImage.src = thumbnails[currentSlide].src; // Use the thumbnail src directly
+      updateThumbnailHighlight(currentSlide);
     }
 
     function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
+      currentSlide = (currentSlide + 1) % thumbnails.length;
       showSlide(currentSlide);
     }
 
     function prevSlide() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      currentSlide = (currentSlide - 1 + thumbnails.length) % thumbnails.length;
       showSlide(currentSlide);
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+
+    function previewSlide(index) {
+      carouselImage.src = thumbnails[index].src; // Show thumbnail src on hover
+    }
+
+    function resetSlide() {
+      carouselImage.src = thumbnails[currentSlide].src; // Reset to current slide's src
+    }
+
+    function updateThumbnailHighlight(index) {
+      thumbnails.forEach((thumbnail, i) => {
+        thumbnail.classList.toggle("selected-thumbnail", i === index);
+      });
     }
 
   </script>
