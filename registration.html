@@ -1,177 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Navbar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-  
+
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="Responsive.css">
   <script> </script>
 </head>
+
 <body>
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    <!-- First Navbar (Logo, Search, Icons) -->
-    <nav class="navbar navbar-light bg-light py-2 border-bottom">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center w-100">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-              <img src="images/applelogo.png" alt="IpAD WALE" width="150">
-            </a>
-    
-            <!-- Search bar for larger screens -->
-            <form class="d-flex mx-auto w-50 d-none d-lg-flex">
-              <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-            </form>
-    
-            <!-- Right-side options (hidden on mobile until toggled) -->
-            <div class="navbar-right d-none d-lg-flex align-items-center">
-              <!-- Country select -->
-              <div class="flags d-flex align-items-center">
-                <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-              </div>
-              <!-- Cart icon -->
-              <!-- <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-              <!-- Sign-in -->
-              
-              <a href="registration.html"  class="btn btn-dark btn-md"><i class="bi bi-person"></i> Sign In</a>
-            </div>
-    
-            <!-- Toggle button for mobile view -->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-    
-          <!-- Search bar and right-side options for mobile view (inside the collapse) -->
-          <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-            <form class="d-flex mt-3 w-100">
-              <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products" aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-            </form>
-    
-            <!-- Right-side options for mobile -->
-            <div class="navbar-right d-flex flex-column mt-3">
-              <!-- Country select -->
-              <div class="flags d-flex align-items-center">
-                <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-              </div>
-              <!-- Language icon -->
-              <!-- <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a> -->
-              <!-- Cart icon -->
-              <!-- <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-              <!-- Sign-in -->
-              <a href="registration.html"><i class="bi bi-person" class="btn btn-dark btn-md"></i> Sign In</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    
-      <!-- Second Navbar (Categories) -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
-        <div class="container d-flex justify-content-between align-items-center">
-          <!-- Toggle dropdown button for All Categories (mobile) -->
-          <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
-            <i class="bi bi-list"></i> All Categories
-          </button>
-    
-          
-          <div class="collapse navbar-collapse" id="categoriesMenu">
-            <ul class="navbar-nav flex-wrap">
-              <li class="nav-item"><a class="nav-link" href="product.html">All Categories</a></li>
-              <li class="nav-item"><a class="nav-link" href="product.html">ipad</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="product.html">Smartwatches</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="product.html">MackBook</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li> -->
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <!-- main section start  -->
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+  <!-- First Navbar (Logo, Search, Icons) -->
+  <nav class="navbar navbar-light bg-light py-2 border-bottom">
     <div class="container">
-        <div class="row">
-<div class="col-12">
-    <div class="login-container" style="margin:50px auto;">
-        <h2>Sign In</h2>
-        <form action="/login" method="POST">
-            <label class="form-label" >Email or Phone Number</label>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="email_or_phone" placeholder="Email or Phone Number" required>
-            </div>
-            
-            
-            <label class="form-label" >Password</label>
-            <div class="mb-3">
-            <input type="password" name="email_or_phone" class="form-control" placeholder="Enter Password" required>
-        </div>
-        <div class="mb-3">
-           <button type="submit" class="btn" style="width: 100%; background-color: rgb(12, 185, 12);">Sign up</button>
-        </div>
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <!-- Logo -->
+        <a class="navbar-brand" href="Index.html">
+          <img src="images/applelogo.png" alt="IpAD WALE" width="150">
+        </a>
+
+        <!-- Search bar for larger screens -->
+        <form class="d-flex mx-auto w-50 d-none d-lg-flex">
+          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
+            aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
         </form>
-        <hr>
-        <div class="mb-3">
-            <button type="submit" class="facebook btn"  >
-                <img src="images/facebooknew.png" style="width: 25px; ">&nbsp;Sign in with Facebook</button>
-         </div>
-         <div class="mb-3">
-            <button type="submit" class="google btn" >
-                <img src="images/googleicon.png" style="width: 25px;">  Sign in with Google</button>
-         </div>
-        
-        
-    </div>
-</div>
+
+        <!-- Right-side options (hidden on mobile until toggled) -->
+        <div class="navbar-right d-none d-lg-flex align-items-center">
+          <!-- Country select -->
+          <div class="flags d-flex align-items-center">
+            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+              style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
+          </div>
+          <!-- Cart icon -->
+          <!-- <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
+          <!-- Sign-in -->
+
+          <a href="registration.html" class="btn btn-dark btn-md"><i class="bi bi-person"></i> Sign In</a>
         </div>
 
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Search bar and right-side options for mobile view (inside the collapse) -->
+      <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
+        <form class="d-flex mt-3 w-100">
+          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
+            aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+
+        <!-- Right-side options for mobile -->
+        <div class="navbar-right d-flex flex-column mt-3">
+          <!-- Country select -->
+          <div class="flags d-flex align-items-center">
+            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+              style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
+          </div>
+          <!-- Language icon -->
+          <!-- <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a> -->
+          <!-- Cart icon -->
+          <!-- <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
+          <!-- Sign-in -->
+          <a href="registration.html"><i class="bi bi-person" class="btn btn-dark btn-md"></i> Sign In</a>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    
-    
+  <!-- Second Navbar (Categories) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-1">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Toggle dropdown button for All Categories (mobile) -->
+      <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse"
+        data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
+        <i class="bi bi-list"></i> All Categories
+      </button>
 
- <!-- footer section  -->
-<footer class="site-footer">
+
+      <div class="collapse navbar-collapse" id="categoriesMenu">
+        <ul class="navbar-nav flex-wrap">
+          <li class="nav-item"><a class="nav-link" href="product.html">All Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">ipad</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="product.html">Smartwatches</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="product.html">MackBook</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ 
+
+
   <div class="container">
-    <div class="footer-top">
-      <div class="footer-row">
-        <div class="footer-col">
-          <a href="/">
-            <img src="images/applelogo.png" alt="logo" class="footer-logo" />
-          </a>
-          <p class="footer-about-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium ipsa, quisquam inventore, veniam velit deserunt
-            omnis quia aliquid quasi ratione a tempora maiores laborum?
-         
-          </p>
+    <div class="login-containerr" style="margin:50px auto;">
+      <div class="row position-relative">
+        <div class="col-lg-5 col-12">
+          <h2>Sign In</h2>
+          <form action="/login" method="POST">
+            <label class="form-label">Email or Phone Number</label>
+            <div class="mb-3">
+              <input type="text" class="form-control" name="email_or_phone" placeholder="Email or Phone Number"
+                required>
+            </div>
+            <label class="form-label">Password</label>
+            <div class="mb-3">
+              <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn" style="width: 100%; background-color: rgb(12, 185, 12);">Sign
+                in</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-1 col-sm-12">
+          <div class="separator">
+            <div class="circle">
+              <span>OR</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12">
+          <div class="mb-3 regisintegration">
+            <button type="submit" class="facebook btn">
+              <img src="images/facebooknew.png" style="width: 25px;">&nbsp;Sign in with Facebook</button>
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="google btn">
+              <img src="images/googleicon.png" style="width: 25px;"> Sign in with Google</button>
+          </div>
         </div>
 
-        <div class="footer-col">
-          <h3 class="footer-title">Services</h3>
-          <ul class="footer-links">
-            <li><a href="">Home</a></li>
-            <li><a href="">Our Products</a></li>
-            <li><a href="">Contact</a></li>
-            <!-- <li><a href="">Digital Marketing</a></li>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer section  -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-row">
+          <div class="footer-col">
+            <a href="/">
+              <img src="images/applelogo.png" alt="logo" class="footer-logo" />
+            </a>
+            <p class="footer-about-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium ipsa, quisquam inventore, veniam velit deserunt
+              omnis quia aliquid quasi ratione a tempora maiores laborum?
+
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-title">Services</h3>
+            <ul class="footer-links">
+              <li><a href="">Home</a></li>
+              <li><a href="">Our Products</a></li>
+              <li><a href="">Contact</a></li>
+              <!-- <li><a href="">Digital Marketing</a></li>
             <li><a href="">Content Writing</a></li>
             <li><a href=""> </a></li> -->
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <!-- <div class="footer-col">
+          <!-- <div class="footer-col">
           <h3 class="footer-title">Quick Links</h3>
           <ul class="footer-links">
             <li><a href="/">Explore Us</a></li>
@@ -182,52 +204,51 @@
           </ul>
         </div> -->
 
-        <div class="footer-col">
-          <h3 class="footer-title">Contact</h3>
-          <p class="footer-contact-text">
-            Lorem ipsum dolor  facilis veniam numquam quo iste. Optio, earum explicabo.
-          </p>
-          <ul class="footer-contact-info">
-            <li>
-              <img src="images/mailvector.png" alt="email" />
-              <a href="mailto:officialcodesbunny@gmail.com"
-                >&nbsp;ipadwaly@gmail.com</a
-              >
-            </li>
-            <li>
-              <img src="images/telephonevector.png" alt="phone" />
-              <NavLink to="tel:923080044190">&nbsp;+92 304 5564190</NavLink>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3 class="footer-title">Follow us</h3>
-          <div class="footer-social">
-            <a href="mailto:@gmail.com" target="_blank">
-              <i class="fa fa-envelope"></i>
-            </a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" target="_blank">
-              <i class="fa-brands fa-facebook-f"></i></i>
-            </a>
-            <a href="" target="_blank">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+          <div class="footer-col">
+            <h3 class="footer-title">Contact</h3>
+            <p class="footer-contact-text">
+              Lorem ipsum dolor facilis veniam numquam quo iste. Optio, earum explicabo.
+            </p>
+            <ul class="footer-contact-info">
+              <li>
+                <img src="images/mailvector.png" alt="email" />
+                <a href="mailto:officialcodesbunny@gmail.com">&nbsp;ipadwaly@gmail.com</a>
+              </li>
+              <li>
+                <img src="images/telephonevector.png" alt="phone" />
+                <NavLink to="tel:923080044190">&nbsp;+92 304 5564190</NavLink>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-title">Follow us</h3>
+            <div class="footer-social">
+              <a href="mailto:@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i></i>
+              </a>
+              <a href="" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 iPad Wale. All rights reserved.</p>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer-bottom">
-      <p>© 2024 iPad Wale. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
 
-  
 
-    <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
