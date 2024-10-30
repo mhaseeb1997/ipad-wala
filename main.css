@@ -598,7 +598,11 @@ body {
 
 
 /* product detail css  */
-
+.product-detail-image-gallery{
+  border: 2px solid rgb(228, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(122, 122, 122, 0.2);
+}
 .product-detail-main-image {
   border-radius: 10px;
 }
