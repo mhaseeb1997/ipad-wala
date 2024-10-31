@@ -14,13 +14,19 @@ body {
 
 /* var(--border-color); */
 :root {
+  --white-color:white;
   --border-color: #dfe0e4;
   --text-color: black;
   --riggoogle-Hover: #e70505c2;
   --rigfacebook-Hover: #284177;
   --rigfacebook-bg: #476fc5;
+  --theme-color:#39443e;
 }
 
+.navbar{
+  background-color: var(--theme-color);
+ 
+}
 
 /* Search bar for larger screens */
 .search-form {
@@ -40,10 +46,66 @@ body {
   padding: 0.2rem 0.4rem;
 }
 
+.nav-btn {
+  font-family: Barlow;
+  color: var(--white-color);
+  position: relative;
+  width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  /* -webkit-appearance: none; */
+  border: none;
+  outline: none !important;
+  /* background-color: var(--thm-novablue); */
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+ 
+  padding: 5px 0;
+  border-radius: 9px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(0deg, #053401 0%, rgb(33, 76, 22) 100%);
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+  text-decoration: none;
+}
+
+.nav-btn:hover:after {
+  opacity: 1;
+  transform: scaleY(1.0);
+}
+
+.nav-btn:hover {
+  color: var(--white-color);
+}
+
+
 /* Second bar (categories) styles */
 .navbar-nav .nav-link {
   margin-right: 1.5rem;
-  color: var(--text-color);
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -91,11 +153,7 @@ body {
   background-color: #444;
 }
 
-
 /* herro section slider */
-
-
-
 
 .heroimage {
   /* max-width: 100%; */
@@ -147,7 +205,7 @@ body {
 /* css for footer  */
 
 .site-footer {
-  background-color: #cfcece;
+  background-color: var(--theme-color);
   color: var(--text-color);
   position: relative;
 
@@ -1208,3 +1266,30 @@ body {
 list-style: none;
 
 }
+
+
+/* /////////////////////////////////////////////// */
+.home-demo{
+  margin: 50px 0;
+}
+.home-demo .item {
+  background: var(--theme-color);
+
+}
+
+.home-demo .item a{
+  background: var(--theme-color);
+  text-decoration: none;
+}
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+
+
