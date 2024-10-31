@@ -313,6 +313,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .footer-social a:hover {
@@ -416,7 +417,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 50px 0;
   background-color: #fff;
 }
 
@@ -592,7 +593,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding:  15px;
   text-align: center;
   width: 100%;
   max-width: 220px;
@@ -716,7 +717,7 @@ body {
 }
 
 .product-section {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 /* Product Image Card */
@@ -815,12 +816,19 @@ body {
   color: var(--text-color);
 }
 
+.popup-header{
+  margin-top: 20px;
+  text-align: center;
+
+}
+
 /* Popup header */
 .popup-header h3 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
   color: var(--text-color);
+
 }
 
 /* Modal body */
@@ -901,14 +909,14 @@ body {
   right: 15px;
   font-size: 24px;
   color: #999;
-  background-color: red;
+  background: none;
   border: none;
   cursor: pointer;
 }
 
 .closereturn:hover {
-  color: #000;
-  background-color: red;
+  color: var(--text-color);
+ 
 }
 
 
@@ -939,14 +947,14 @@ body {
   right: 15px;
   font-size: 24px;
   color: #999;
-  background-color: red;
+  background: none;
   border: none;
   cursor: pointer;
 }
 
 .closeWarranty:hover {
   color: var(--text-color);
-  background-color: red;
+ 
 }
 
 
