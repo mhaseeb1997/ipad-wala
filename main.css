@@ -1644,16 +1644,21 @@ list-style: none;
   margin: 50px 0;
 }
 .home-demo .item {
-  background: var(--theme-color);
+  /* background: var(--theme-color); */
 
 }
 
 .home-demo .item a{
-  background: var(--theme-color);
+  /* background: var(--theme-color); */
   text-decoration: none;
 }
-.home-demo h2 {
-  color: #FFF;
+
+.home-demo .item a img{
+height: 420px;
+
+}
+.home-demo h3 {
+  color:var(--text-color);
   text-align: center;
   padding: 1rem 0;
   margin: 0;
