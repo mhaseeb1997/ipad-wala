@@ -24,7 +24,7 @@ body {
 }
 
 .navbar{
-  background: linear-gradient(9deg, rgba(39,65,51,1) 0%, rgba(67,96,80,1) 100%);
+  background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
 }
 
 /* Search bar for larger screens */
@@ -567,7 +567,7 @@ body {
 /* css for footer  */
 
 .site-footer {
-  background: linear-gradient(9deg, rgba(39,65,51,1) 0%, rgba(67,96,80,1) 100%);
+  background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
   color: var(--text-color);
   position: relative;
 
