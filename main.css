@@ -24,14 +24,56 @@ body {
 }
 
 .navbar{
-  background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
+ background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
 }
 
-/* Search bar for larger screens */
-.search-form {
-  flex-grow: 1;
-  max-width: 600px;
+
+ /* Container for the search field */
+ .search-container {
+  display: flex;
+  align-items: center;
+  background: #2a674b;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 5px auto;
+  padding: 5px; /* Added padding for better alignment */
 }
+
+/* Styling the search input */
+.search-input {
+  line-height: normal;
+  width: 90%;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Search button styling */
+.search-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+/* Align the icon */
+.fas {
+  font-size: 18px; /* Adjust icon size if needed */
+}
+
 
 /* Right-side options (cart, sign in, country) */
 .navbar-right {
@@ -49,18 +91,18 @@ body {
   font-family: Barlow;
   color: var(--white-color);
   position: relative;
-  width: 150px;
+  width: 120px;
   display: inline-block;
   vertical-align: middle;
-  /* -webkit-appearance: none; */
+
   border: none;
   outline: none !important;
-  /* background-color: var(--thm-novablue); */
+
   text-align: center;
   font-size: 14px;
   font-weight: 700;
  
-  padding: 5px 0;
+
   border-radius: 9px;
   border: 1px solid grey;
   transition: all 0.1s linear;

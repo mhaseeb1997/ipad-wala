@@ -19,8 +19,8 @@
 
 
   <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 
   <link rel="stylesheet" href="vendors/swiper/swiper.min.css" />
@@ -30,7 +30,8 @@
 
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="Responsive.css">
-  <script> </script>
+
+
 </head>
 
 <body>
@@ -40,20 +41,19 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-center w-100">
         <!-- Logo -->
-        <a class="navbar-brand" href="Index.html">
-          <img src="images/applelogo.png" alt="IpAD WALE" width="150">
-        </a>
-
+        <div class="col-lg-2">
+          <a class="navbar-brand" href="Index.html">
+            <img src="images/applelogo.png" alt="IpAD WALE" width="150">
+          </a>
+        </div>
         <!-- Search bar for larger screens -->
-        <form class="d-flex mx-auto w-50 d-none d-lg-flex">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
-            aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-        </form>
 
         <!-- Right-side options (hidden on mobile until toggled) -->
         <div class="navbar-right d-none d-lg-flex align-items-center">
           <!-- Country select -->
+          <button class="btn" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
+            <i class="bi bi-search" style="color: aliceblue;"> Search</i>
+          </button>
           <div class="flags d-flex align-items-center">
             <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
@@ -67,6 +67,9 @@
         </div>
 
         <!-- Toggle button for mobile view -->
+        <button class="btn  d-lg-none" type="button" onclick="toggleSearch()">
+          <i class="bi bi-search" style="color: aliceblue;"> Search</i>
+        </button>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
           aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -75,11 +78,7 @@
 
       <!-- Search bar and right-side options for mobile view (inside the collapse) -->
       <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-        <form class="d-flex mt-3 w-100">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
-            aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-        </form>
+
 
         <!-- Right-side options for mobile -->
         <div class="navbar-right d-flex flex-column mt-3">
@@ -124,6 +123,16 @@
       </div>
     </div>
   </nav>
+  <div class="navbar"  id="searcher"  style="display: none;">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search">
+      <button class="search-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+
 
 
   <section class="main-slider">
@@ -140,75 +149,71 @@
 "autoplay": {
 "delay": 2500
 }}'>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="image-layer"
-                    style="background-image: url(images/sliderone.jpg);">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url(images/sliderone.jpg);">
+          </div>
+          <div class="image-layer-overlay"></div>
+          <!-- /.image-layer -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="main-slider__content">
+                  <h2>Better Solution at <br> Your Fingertips</h2>
+                  <p>We’ve One Mission to be the Best IT Software Company in UK</p>
+                  <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
                 </div>
-                <div class="image-layer-overlay"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="main-slider__content">
-                                <h2>Better Solution at <br> Your Fingertips</h2>
-                                <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="image-layer"
-                    style="background-image: url(images/slidertwo.png);">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url(images/slidertwo.png);">
+          </div>
+          <div class="image-layer-overlay"></div>
+          <!-- /.image-layer -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="main-slider__content">
+                  <h2>Better Solution at <br> Your Fingertips</h2>
+                  <p>We’ve One Mission to be the Best IT Software Company in UK</p>
+                  <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
                 </div>
-                <div class="image-layer-overlay"></div>
-                <!-- /.image-layer -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="main-slider__content">
-                                <h2>Better Solution at <br> Your Fingertips</h2>
-                                <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="image-layer"
-                    style="background-image: url(images/sliderthree.png);">
-                </div>
-                <div class="image-layer-overlay"></div>
-                <!-- /.image-layer -->
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image-layer" style="background-image: url(images/sliderthree.png);">
+          </div>
+          <div class="image-layer-overlay"></div>
+          <!-- /.image-layer -->
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="main-slider__content">
-                                <h2>Better Solution at <br> Your Fingertips</h2>
-                                <p>We’ve One Mission to be the Best IT Software Company in UK</p>
-                                <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
-                            </div>
-                        </div>
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="main-slider__content">
+                  <h2>Better Solution at <br> Your Fingertips</h2>
+                  <p>We’ve One Mission to be the Best IT Software Company in UK</p>
+                  <!-- <a href="about.html" class="thm-btn">Discover More</a> -->
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-pagination" id="main-slider-pagination"></div>
-        <div class="main-slider__nav">
-            <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
-                    class="icon-right-arrow icon-left-arrow"></i>
-            </div>
-            <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
-                    class="icon-right-arrow"></i>
-            </div>
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-pagination" id="main-slider-pagination"></div>
+      <div class="main-slider__nav">
+        <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
+            class="icon-right-arrow icon-left-arrow"></i>
         </div>
+        <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i class="icon-right-arrow"></i>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
   <!-- arrow up button -->
@@ -315,61 +320,92 @@
         <div class="item">
           <a href="Index.html"><img src="images/watches/Series1/alu-rosegold.jpg" alt="series 1"></a>
 
-          <h3 >Series 1</h3>
+          <h3>Series 1</h3>
         </div>
         <div class="item">
           <a href="Index.html"> <img src="images/watches/Series2/alu-spacegray-nike.jpg" alt="Smartwatch 2"></a>
-          <a href="Index.html"> <h3>Series 2</h3></a>
+          <a href="Index.html">
+            <h3>Series 2</h3>
+          </a>
         </div>
         <div class="item">
-          <a href="Index.html">  <img src="images/watches/Series3/series3.webp" alt="Smartwatch 3"></a>
-          <a href="Index.html"> <h3>Series 3</h3></a>
+          <a href="Index.html"> <img src="images/watches/Series3/series3.webp" alt="Smartwatch 3"></a>
+          <a href="Index.html">
+            <h3>Series 3</h3>
+          </a>
         </div>
         <div class="item">
           <a href="Index.html"><img src="images/watches/Series4/series4.webp" alt="Smartwatch 4"></a>
-          <a href="Index.html">  <h3>Series 4</h3></a>
+          <a href="Index.html">
+            <h3>Series 4</h3>
+          </a>
         </div>
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series5/series_5-spaceblacktitaniumcaseviperdark.png" alt="Smartwatch 5"></a>
-          <a href="Index.html">  <h3>Series 5</h3></a>
+          <a href="Index.html"> <img src="images/watches/Series5/series_5-spaceblacktitaniumcaseviperdark.png"
+              alt="Smartwatch 5"></a>
+          <a href="Index.html">
+            <h3>Series 5</h3>
+          </a>
         </div>
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series6/series-6-aluminum-blue-case.png" alt="Smartwatch 1"></a>
-          <a href="Index.html">  <h3>Series 6</h3></a>
+          <a href="Index.html"> <img src="images/watches/Series6/series-6-aluminum-blue-case.png"
+              alt="Smartwatch 1"></a>
+          <a href="Index.html">
+            <h3>Series 6</h3>
+          </a>
         </div>
         <div class="item">
           <a href="Index.html"> <img src="images/watches/Series7/ii-4.png" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>Series 7</h3></a>
+          <a href="Index.html">
+            <h3>Series 7</h3>
+          </a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series8/qq.webp"  alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>Series 8</h3></a>
+          <a href="Index.html"> <img src="images/watches/Series8/qq.webp" alt="Smartwatch 4"></a>
+          <a href="Index.html">
+            <h3>Series 8</h3>
+          </a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series10/Apple-Watch-Series-10-42mm.jpg" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>Series 10</h3></a>
+          <a href="Index.html"> <img src="images/watches/Series10/Apple-Watch-Series-10-42mm.jpg"
+              alt="Smartwatch 4"></a>
+          <a href="Index.html">
+            <h3>Series 10</h3>
+          </a>
         </div>
 
         <div class="item">
           <a href="Index.html"> <img src="images/watches/WatchSE/cce1-1338-mp_1_.jpg" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>watch SE</h3></a>
+          <a href="Index.html">
+            <h3>watch SE</h3>
+          </a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchSE2/WatchSE44mmstarlight-1200x1200-1.webp" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>watch SE2</h3></a>
+          <a href="Index.html"> <img src="images/watches/WatchSE2/WatchSE44mmstarlight-1200x1200-1.webp"
+              alt="Smartwatch 4"></a>
+          <a href="Index.html">
+            <h3>watch SE2</h3>
+          </a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchUltra/apple-mreh3-watch-ultra-2.jpg.jpeg" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>watch Ultra</h3></a>
+          <a href="Index.html"> <img src="images/watches/WatchUltra/apple-mreh3-watch-ultra-2.jpg.jpeg"
+              alt="Smartwatch 4"></a>
+          <a href="Index.html">
+            <h3>watch Ultra</h3>
+          </a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchUltra2/apple-watch-ultra-2-49mm-lte-natural-titanium-natural-milanese-loop-01.webp" alt="Smartwatch 4"></a>
-          <a href="Index.html"> <h3>watch Ultra2</h3></a>
+          <a href="Index.html"> <img
+              src="images/watches/WatchUltra2/apple-watch-ultra-2-49mm-lte-natural-titanium-natural-milanese-loop-01.webp"
+              alt="Smartwatch 4"></a>
+          <a href="Index.html">
+            <h3>watch Ultra2</h3>
+          </a>
         </div>
       </div>
     </div>
@@ -505,30 +541,38 @@
   </footer>
 
   <script>
-
-$(function () {
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
-    items: 3,            // Number of items to display
-    margin: 10,          // Space between items
-    loop: true,          // Enable infinite loop
-    nav: true,           // Show navigation arrows
-    autoplay: true,      // Enable auto-scroll
-    autoplayTimeout: 3000, // Time (in ms) between slides (3 seconds)
-    autoplayHoverPause: true, // Pause auto-scroll on hover
-    responsive: {
-      0: {
-        items: 1         // Display 1 item on smaller screens
-      },
-      600: {
-        items: 2         // Display 2 items on medium screens
-      },
-      1000: {
-        items: 3         // Display 3 items on large screens
+    function toggleSearch() {
+      const searchContainer = document.getElementById("searcher");
+      if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
+        searchContainer.style.display = "block";
+      } else {
+        searchContainer.style.display = "none";
       }
     }
-  });
-});
+
+    $(function () {
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 3,            // Number of items to display
+        margin: 10,          // Space between items
+        loop: true,          // Enable infinite loop
+        nav: true,           // Show navigation arrows
+        autoplay: true,      // Enable auto-scroll
+        autoplayTimeout: 3000, // Time (in ms) between slides (3 seconds)
+        autoplayHoverPause: true, // Pause auto-scroll on hover
+        responsive: {
+          0: {
+            items: 1         // Display 1 item on smaller screens
+          },
+          600: {
+            items: 2         // Display 2 items on medium screens
+          },
+          1000: {
+            items: 3         // Display 3 items on large screens
+          }
+        }
+      });
+    });
 
 
     // Function to open the popup with fade-in effect
@@ -552,14 +596,14 @@ $(function () {
 
   <!-- Optional JavaScript -->
 
-   
-    <script src="vendors/swiper/swiper.min.js"></script>
-   
-    <script src="vendors/wow/wow.js"></script>
-    
-    <script src="vendors/vegas/vegas.min.js"></script>
-   
-    <script src="vendors/timepicker/timePicker.js"></script>
+
+  <script src="vendors/swiper/swiper.min.js"></script>
+
+  <script src="vendors/wow/wow.js"></script>
+
+  <script src="vendors/vegas/vegas.min.js"></script>
+
+  <script src="vendors/timepicker/timePicker.js"></script>
 
 
 
