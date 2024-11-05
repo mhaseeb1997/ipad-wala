@@ -20,12 +20,11 @@ body {
   --riggoogle-Hover: #e70505c2;
   --rigfacebook-Hover: #284177;
   --rigfacebook-bg: #476fc5;
-  --theme-color:#39443e;
+  --theme-color: rgb(50,80,64);;
 }
 
 .navbar{
-  background-color: var(--theme-color);
- 
+  background: linear-gradient(9deg, rgba(39,65,51,1) 0%, rgba(67,96,80,1) 100%);
 }
 
 /* Search bar for larger screens */
@@ -568,7 +567,7 @@ body {
 /* css for footer  */
 
 .site-footer {
-  background-color: var(--theme-color);
+  background: linear-gradient(9deg, rgba(39,65,51,1) 0%, rgba(67,96,80,1) 100%);
   color: var(--text-color);
   position: relative;
 
