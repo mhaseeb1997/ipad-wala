@@ -313,20 +313,20 @@
       <h3 style="justify-content: center; text-align: center; margin: 30px 0;">Endless possibilities</h3>
       <div class="owl-carousel owl-theme">
         <div class="item">
-          <a href="Index.html"><img src="images/watches/Series1/aluspacegray.png" alt="series 1"></a>
+          <a href="Index.html"><img src="images/watches/Series1/alu-rosegold.jpg" alt="series 1"></a>
 
           <h3 >Series 1</h3>
         </div>
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series2/alurosegold.png" alt="Smartwatch 2"></a>
+          <a href="Index.html"> <img src="images/watches/Series2/alu-spacegray-nike.jpg" alt="Smartwatch 2"></a>
           <a href="Index.html"> <h3>Series 2</h3></a>
         </div>
         <div class="item">
-          <a href="Index.html">  <img src="images/watches/Series3/series3.png" alt="Smartwatch 3"></a>
+          <a href="Index.html">  <img src="images/watches/Series3/series3.webp" alt="Smartwatch 3"></a>
           <a href="Index.html"> <h3>Series 3</h3></a>
         </div>
         <div class="item">
-          <a href="Index.html"><img src="images/watches/Series4/series4.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"><img src="images/watches/Series4/series4.webp" alt="Smartwatch 4"></a>
           <a href="Index.html">  <h3>Series 4</h3></a>
         </div>
         <div class="item">
@@ -343,32 +343,32 @@
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series8/series8.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/Series8/qq.webp"  alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>Series 8</h3></a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/Series10/Series10-42mm.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/Series10/Apple-Watch-Series-10-42mm.jpg" alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>Series 10</h3></a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchSE/watchSE.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/WatchSE/cce1-1338-mp_1_.jpg" alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>watch SE</h3></a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchSE2/watchSE2.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/WatchSE2/WatchSE44mmstarlight-1200x1200-1.webp" alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>watch SE2</h3></a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchUltra/ultraa.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/WatchUltra/apple-mreh3-watch-ultra-2.jpg.jpeg" alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>watch Ultra</h3></a>
         </div>
 
         <div class="item">
-          <a href="Index.html"> <img src="images/watches/WatchUltra2/ultra2.png" alt="Smartwatch 4"></a>
+          <a href="Index.html"> <img src="images/watches/WatchUltra2/apple-watch-ultra-2-49mm-lte-natural-titanium-natural-milanese-loop-01.webp" alt="Smartwatch 4"></a>
           <a href="Index.html"> <h3>watch Ultra2</h3></a>
         </div>
       </div>
@@ -506,16 +506,29 @@
 
   <script>
 
-    $(function () {
-      // Owl Carousel
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        items: 3,
-        margin: 10,
-        loop: true,
-        nav: true
-      });
-    });
+$(function () {
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 3,            // Number of items to display
+    margin: 10,          // Space between items
+    loop: true,          // Enable infinite loop
+    nav: true,           // Show navigation arrows
+    autoplay: true,      // Enable auto-scroll
+    autoplayTimeout: 2000, // Time (in ms) between slides (3 seconds)
+    autoplayHoverPause: true, // Pause auto-scroll on hover
+    responsive: {
+      0: {
+        items: 1         // Display 1 item on smaller screens
+      },
+      600: {
+        items: 2         // Display 2 items on medium screens
+      },
+      1000: {
+        items: 3         // Display 3 items on large screens
+      }
+    }
+  });
+});
 
 
     // Function to open the popup with fade-in effect

@@ -1653,10 +1653,7 @@ list-style: none;
   text-decoration: none;
 }
 
-.home-demo .item a img{
-height: 420px;
 
-}
 .home-demo h3 {
   color:var(--text-color);
   text-align: center;
@@ -1666,6 +1663,19 @@ height: 420px;
   font-weight: 300;
 }
 
+
+.home-demo .item img {
+  width: 100%;
+  height: auto;
+  max-height: 450px; /* Adjust based on your design needs */
+  object-fit: cover; /* Ensures images maintain their aspect ratio and fit in the container */
+}
+
+@media (max-width: 768px) {
+  .home-demo .item img {
+    max-height: 475px;
+  }
+}
 
 
 
