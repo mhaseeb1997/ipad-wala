@@ -456,3 +456,35 @@
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  /* .main-menu-wrapper__logo {
+      margin-right: 50px;
+  } */
+
+  .main-menu-wrapper__call {
+      display: none;
+  }
+
+  .main-menu .mobile-nav__toggler {
+      margin-right: 0;
+
+      display: inline-block;
+  }
+
+  .main-menu-two .mobile-nav__toggler:hover {
+      color: var(--thm-black);
+  }
+
+  .main-menu-wrapper__main-menu {
+      margin-top: 30px;
+      float: right;
+  }
+
+  .social-icons {
+      display: none;
+  }
+
+
+}

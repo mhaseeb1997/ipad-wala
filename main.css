@@ -14,22 +14,23 @@ body {
 
 /* var(--border-color); */
 :root {
-  --white-color:white;
+  --white-color: white;
   --border-color: #dfe0e4;
   --text-color: black;
   --riggoogle-Hover: #e70505c2;
   --rigfacebook-Hover: #284177;
   --rigfacebook-bg: #476fc5;
-  --theme-color: rgb(50,80,64);;
+  --theme-color: rgb(50, 80, 64);
+  ;
 }
 
-.navbar{
- background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
+.navbar {
+  background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);
 }
 
 
- /* Container for the search field */
- .search-container {
+/* Container for the search field */
+.search-container {
   display: flex;
   align-items: center;
   background: #2a674b;
@@ -71,7 +72,8 @@ body {
 
 /* Align the icon */
 .fas {
-  font-size: 18px; /* Adjust icon size if needed */
+  font-size: 18px;
+  /* Adjust icon size if needed */
 }
 
 
@@ -101,7 +103,7 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
- 
+
 
   border-radius: 9px;
   border: 1px solid grey;
@@ -217,13 +219,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
   transform: scale(1);
   /* transition: transform 7000ms ease; */
   z-index: 1;
-  background-color: rgba(32, 32, 32, 0.4); /* Light black overlay */
+  background-color: rgba(32, 32, 32, 0.4);
+  /* Light black overlay */
   mix-blend-mode: luminosity;
-  opacity: .8; /* Set to 1 to see the full overlay color */
+  opacity: .8;
+  /* Set to 1 to see the full overlay color */
 }
 
 
@@ -274,9 +278,9 @@ body {
   transform: translateY(100px);
   transition-delay: 2500ms;
   transition: transform 2000ms ease,
-      opacity 2000ms ease,
-      color 500ms ease,
-      background 500ms ease;
+    opacity 2000ms ease,
+    color 500ms ease,
+    background 500ms ease;
   z-index: 30;
 }
 
@@ -285,9 +289,9 @@ body {
   transform: translateY(100px);
   transition-delay: 2500ms;
   transition: transform 2000ms ease,
-      opacity 2000ms ease,
-      color 500ms ease,
-      background 500ms ease;
+    opacity 2000ms ease,
+    color 500ms ease,
+    background 500ms ease;
 }
 
 .main-slider .swiper-slide-active .image-layer {
@@ -445,9 +449,9 @@ body {
   transform: translateY(-120px);
   transition-delay: 2500ms;
   transition: transform 2000ms ease,
-      opacity 2000ms ease,
-      color 500ms ease,
-      background 500ms ease;
+    opacity 2000ms ease,
+    color 500ms ease,
+    background 500ms ease;
 }
 
 .main-slider-two .swiper-slide-active h3 {
@@ -609,7 +613,7 @@ body {
 /* css for footer  */
 
 .site-footer {
-  background: linear-gradient(9deg, rgba(12,64,40,1) 0%, rgba(25,111,72,1) 100%);
+  background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);
   color: var(--text-color);
   position: relative;
 
@@ -997,7 +1001,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding:  15px;
+  padding: 15px;
   text-align: center;
   width: 100%;
   max-width: 220px;
@@ -1061,11 +1065,12 @@ body {
 
 
 /* product detail css  */
-.product-detail-image-gallery{
+.product-detail-image-gallery {
   border: 2px solid rgb(228, 226, 226);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(122, 122, 122, 0.2);
 }
+
 .product-detail-main-image {
   border-radius: 10px;
 }
@@ -1220,7 +1225,7 @@ body {
   color: var(--text-color);
 }
 
-.popup-header{
+.popup-header {
   margin-top: 20px;
   text-align: center;
 
@@ -1320,7 +1325,7 @@ body {
 
 .closereturn:hover {
   color: var(--text-color);
- 
+
 }
 
 
@@ -1358,7 +1363,7 @@ body {
 
 .closeWarranty:hover {
   color: var(--text-color);
- 
+
 }
 
 
@@ -1674,29 +1679,30 @@ body {
   margin: 20px 0;
 }
 
-.ordersummary ul li{
-list-style: none;
+.ordersummary ul li {
+  list-style: none;
 
 }
 
 
 /* /////////////////////////////////////////////// */
-.home-demo{
+.home-demo {
   margin: 50px 0;
 }
+
 .home-demo .item {
   /* background: var(--theme-color); */
 
 }
 
-.home-demo .item a{
+.home-demo .item a {
   /* background: var(--theme-color); */
   text-decoration: none;
 }
 
 
 .home-demo h3 {
-  color:var(--text-color);
+  color: var(--text-color);
   text-align: center;
   padding: 1rem 0;
   margin: 0;
@@ -1708,8 +1714,10 @@ list-style: none;
 .home-demo .item img {
   width: 100%;
   height: auto;
-  max-height: 450px; /* Adjust based on your design needs */
-  object-fit: cover; /* Ensures images maintain their aspect ratio and fit in the container */
+  max-height: 450px;
+  /* Adjust based on your design needs */
+  object-fit: cover;
+  /* Ensures images maintain their aspect ratio and fit in the container */
 }
 
 @media (max-width: 768px) {
@@ -1720,3 +1728,81 @@ list-style: none;
 
 
 
+/* ---------------------------------------------
+  Side social float icon 
+  ---------------------------------------- */
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: block;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: width 0.3s, background-color 0.3s;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.social-icons a i {
+    font-size: 20px;
+
+}
+
+.social-icons a span {
+    display: none;
+    padding: 10px 0;
+}
+
+.social-icons a:hover {
+    width: 150px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.social-icons a:hover span {
+    display: inline;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.mail {
+    background-color: rgb(255, 255, 255);
+}
+
+.twitter {
+    background-color: #37d3fa;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.pinterest {
+    background-color: #bd081c;
+}
+
+.whatsapp {
+    background-color: #29ee2d;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
