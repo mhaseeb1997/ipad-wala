@@ -1225,18 +1225,12 @@ body {
   color: var(--text-color);
 }
 
-.popup-header {
-  margin-top: 20px;
-  text-align: center;
-
-}
 
 /* Popup header */
-.popup-header h3 {
+.popup-header h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
   font-weight: bold;
-  color: var(--text-color);
+  color: white;
 
 }
 
@@ -1784,7 +1778,7 @@ body {
 }
 
 .mail {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .twitter {
