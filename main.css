@@ -35,9 +35,9 @@ body {
   background: #2a674b;
   border-radius: 30px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1900px;
   margin: 5px auto;
-  padding: 5px; /* Added padding for better alignment */
+  /* Added padding for better alignment */
 }
 
 /* Styling the search input */
