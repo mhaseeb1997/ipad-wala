@@ -77,6 +77,42 @@ body {
 }
 
 
+.sectionserviceRow {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(90deg, #00080c, #222222);
+}
+
+.serviceRow {
+  display: flex;
+  width: max-content;
+  animation: scroll 45s linear infinite;
+}
+
+.serviceItem {
+  color: #fff;
+  padding: 10px 20px;
+  white-space: nowrap;
+  font-size: 1.2em;
+  margin-right: 30px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves by half the width of the container for a seamless scroll */
+  }
+}
+
+
+.serviceItem::before {
+  content: "";
+  margin-right: 8px;
+}
+
+
 /* Right-side options (cart, sign in, country) */
 .navbar-right {
   display: flex;
@@ -921,7 +957,7 @@ body {
 
 .info-section {
   padding: 50px;
-  background-color: #f8f9fa;
+  
 }
 
 .info-content {
@@ -946,9 +982,62 @@ body {
 .info-text p {
   font-size: 1.1rem;
   color: var(--text-color);
-  line-height: 1.6;
+  line-height: 1.9;
   margin-bottom: 30px;
 }
+
+.aboutusbtn {
+  margin-bottom: 20px;
+  color: black;
+  position: relative;
+  width: 160px;
+  padding: auto;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none !important;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 9px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.aboutusbtn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(9deg, rgb(15, 73, 46) 0%, rgb(37, 209, 132) 100%);
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+  text-decoration: none;
+}
+
+.aboutusbtn:hover:after {
+  opacity: 1;
+  transform: scaleY(1.0);
+}
+
+.aboutusbtn:hover {
+  color: var(--white-color);
+}
+
 
 /* Statistics section */
 .info-stats {
