@@ -97,6 +97,8 @@ body {
   margin-right: 30px;
 }
 
+
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -970,10 +972,10 @@ body {
 
 /* Text section */
 .info-text {
-  max-width: 600px;
+  max-width: 50%;
 }
 
-.info-text h2 {
+.info-text h3 {
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--text-color);
@@ -1040,6 +1042,12 @@ body {
 
 
 /* Statistics section */
+.statistic {
+	display: block;
+	padding: 2rem;
+	font-size: 6rem;
+	font-weight: 700;
+}
 .info-stats {
   display: flex;
   justify-content: space-between;
