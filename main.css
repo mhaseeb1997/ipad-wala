@@ -972,11 +972,11 @@ body {
 
 /* Text section */
 .info-text {
-  max-width: 50%;
+  max-width: 600px;
 }
 
 .info-text h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: var(--text-color);
 }
