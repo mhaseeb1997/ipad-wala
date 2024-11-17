@@ -885,7 +885,7 @@
     .main-menu .mobile-nav__toggler {
         margin-right: 0;
         padding: 33px 0;
-        display: inline-block;
+        display: none;
     }
 
     .main-menu-two .mobile-nav__toggler:hover {
@@ -925,8 +925,11 @@
     .main-menu .mobile-nav__toggler {
         margin-right: 0;
         padding: 33px 0;
-        display: inline-block;
+        display: none;
     }
+    .sbtn{
+        
+        display: none;}
 
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
@@ -981,6 +984,12 @@
 
     .main-menu-two .mobile-nav__toggler:hover {
         color: var(--thm-black);
+    }
+
+    #searcher{
+        display: none; 
+        margin: 5px auto;
+        width: 400px;
     }
 
 
