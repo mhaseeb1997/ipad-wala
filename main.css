@@ -1779,10 +1779,7 @@ body {
   margin: 50px 0;
 }
 
-.home-demo .item {
-  /* background: var(--theme-color); */
 
-}
 
 .home-demo .item a {
   /* background: var(--theme-color); */
@@ -1800,12 +1797,11 @@ body {
 }
 
 
-.home-demo .item img {
+.home-demo .item {
   width: 100%;
   height: auto;
   max-height: 450px;
   /* Adjust based on your design needs */
-  object-fit: cover;
   /* Ensures images maintain their aspect ratio and fit in the container */
 }
 
@@ -1894,4 +1890,66 @@ body {
 
 .linkedin {
     background-color: #0077b5;
+}
+
+
+.card {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.card .note {
+  font-size: 0.9em;
+  color: #888;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #28a745;
+  color: #fff;
 }
