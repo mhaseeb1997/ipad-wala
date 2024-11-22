@@ -28,8 +28,10 @@
   <link rel="stylesheet" href="vendors/vegas/vegas.min.css" />
   <link rel="stylesheet" href="vendors/timepicker/timePicker.css" />
 
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="Responsive.css">
+  <link rel="stylesheet" href="assest/css/main.css">
+  <link rel="stylesheet" href="assest/css/Responsive.css">
+    <link rel="stylesheet" href="assest/css/header.css">
+  <link rel="stylesheet" href="assest/css/headerres.css">
 
 
 </head>
@@ -37,103 +39,93 @@
 <body>
 
   <!-- First Navbar (Logo, Search, Icons) -->
-  <nav class="navbar navbar-light py-2 border-bottom">
-    <div class="container">
+   <!-- First Navbar (Logo, Search, Icons) -->
+   <header class="main-header ">
+    <nav class="main-menu clearfix">
+      <div class="container">
+        <div class="main-menu-wrapper clearfix">
+            <div class="main-menu-wrapper-inner clearfix">
+                <div class="main-menu-wrapper__left clearfix">
+                    <div class="main-menu-wrapper__logo">
+                        <a href="index.html"><img src="images/applelogo.png" width="100" alt=""></a>
+                    </div>
+                    <div class="main-menu-wrapper__main-menu">
+                      <button class="btn sbtn d-lg-none" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
+                        <i class="bi bi-search" style="color: aliceblue;"> </i>
+                      </button>
+                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                        <ul class="main-menu__list">
+                            <li class="dropdown">
+                                <a href="index.html">Shop</a>
+                                <ul>
+                                  <li class="nav-item"><a class="nav-link" href="product.html">ipad</a></li>
+                                  <li class="nav-item"><a class="nav-link" href="product.html">Smartwatches</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> 
+                                    <li class="nav-item"><a class="nav-link" href="product.html">MackBook</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <!-- <li class="dropdown">
+                                <a href="#">Services</a>
+                                <ul>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="managed-it.html">Managed It</a></li>
+                                    <li><a href="it-support.html">IT Support</a></li>
+                                    <li><a href="it-consultancy.html">IT Consultancy</a></li>
+                                    <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                                    <li><a href="custom-software.html">Custom Software</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Projects</a>
+                                <ul>
+                                    <li><a href="project.html">Projects</a></li>
+                                    <li><a href="project-details.html">Project Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">News</a>
+                                <ul>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="news-details.html">News Details</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu-wrapper__right">
+                    <div class="main-menu-wrapper__search-box-cart-box">
+                      <button class="btn" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
+                        <i class="bi bi-search" style="color: aliceblue;"> </i>
+                      </button>
 
-      <div class="d-flex justify-content-between align-items-center w-100">
-        <!-- Logo -->
-        <div class="col-lg-2">
-          <a class="navbar-brand" href="Index.html">
-            <img src="images/applelogo.png" alt="IpAD WALE" width="150">
-          </a>
+                      <div class="flags d-flex align-items-center">
+                        <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+                          style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
+                      </div>
+                        <a href="registration.html" class="main-menu-wrapper__cart "><i class="fa-regular fa-user fa-sm" style="color: #fcfcfc;"></i></a>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div  id="searcher"  >
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search">
+                <button class="search-button">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div> 
         </div>
-        <!-- Search bar for larger screens -->
-
-        <!-- Right-side options (hidden on mobile until toggled) -->
-        <div class="navbar-right d-none d-lg-flex align-items-center">
-          <!-- Country select -->
-          <button class="btn" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
-            <i class="bi bi-search" style="color: aliceblue;"> </i>
-          </button>
-          <div class="flags d-flex align-items-center">
-            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
-              style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-          </div>
-          <!-- Cart icon -->
-          <!-- <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-          <!-- Sign-in -->
-          <a href="registration.html" class="nav-btn"> Sign In</a>
-          <!-- <a href="registration.html" class="btn btn-dark btn-md"><i class="bi bi-person"></i> Sign In</a> -->
-        </div>
-
-        <!-- Toggle button for mobile view -->
-        <button class="btn  d-lg-none" type="button" onclick="toggleSearch()">
-          <i class="bi bi-search" style="color: aliceblue;"> Search</i>
-        </button>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      
       </div>
-
-      <!-- Search bar and right-side options for mobile view (inside the collapse) -->
-      <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-
-
-        <!-- Right-side options for mobile -->
-        <div class="navbar-right d-flex flex-column mt-3">
-          <!-- Country select -->
-          <div class="flags d-flex align-items-center">
-            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
-              style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
-          </div>
-          <!-- Language icon -->
-          <!-- <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a> -->
-          <!-- Cart icon -->
-          <!-- <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart <span class="badge bg-danger">0</span></a> -->
-          <!-- Sign-in -->
-
-          <a href="registration.html" class="nav-btn"><i class="bi bi-person"></i> Sign In</a>
-        </div>
-      </div>
+    </nav>
     
-      <div  id="searcher"  style="display: none; margin: auto;width: 600px;">
-        <div class="search-container">
-          <input type="text" class="search-input" placeholder="Search">
-          <button class="search-button">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-     
-      </div>
-    </div>
-  </nav>
-
-  <!-- Second Navbar (Categories) -->
-  <nav class="navbar navbar-expand-lg navbar-light  py-1">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- Toggle dropdown button for All Categories (mobile) -->
-      <button class="btn btn-outline-dark d-lg-none categorybtn" type="button" data-bs-toggle="collapse"
-        data-bs-target="#categoriesMenu" aria-expanded="false" aria-controls="categoriesMenu">
-        <i class="bi bi-list"></i> All Categories
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="categoriesMenu">
-        <ul class="navbar-nav flex-wrap">
-          <li class="nav-item" style="color: white;"><a class="nav-link" href="product.html">All Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="product.html">ipad</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#">60% OFF</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="product.html">Smartwatches</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="product.html">MackBook</a></li>
-          <!-- <li class="nav-item"><a class="nav-link" href="#">Tablets</a></li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
+</header>
  
 
 
@@ -324,6 +316,30 @@
     </div>
   </footer>
 
+  <div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image"><img src="images/applelogo.png"
+                    width="100" alt="" /></a>
+        </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <div class="mobile-nav__top">
+            <div class="mobile-nav__social">
+
+                <a href="#" class="fab fa-facebook-square"></a>
+                <!-- <a href="#" class="fab fa-pinterest-p"></a> -->
+                <a href="#" class="fab fa-instagram"></a>
+            </div><!-- /.mobile-nav__social -->
+        </div><!-- /.mobile-nav__top -->
+    </div>
+    <!-- /.mobile-nav__content -->
+</div>
+
   <script>
     function toggleSearch() {
       const searchContainer = document.getElementById("searcher");
@@ -381,13 +397,32 @@
   <!-- Optional JavaScript -->
 
 
+  <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendors/jarallax/jarallax.min.js"></script>
+  <script src="vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/jquery-appear/jquery.appear.min.js"></script>
+  <script src="vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+  <script src="vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="vendors/jquery-validate/jquery.validate.min.js"></script>
+  <script src="vendors/nouislider/nouislider.min.js"></script>
+  <script src="vendors/odometer/odometer.min.js"></script>
   <script src="vendors/swiper/swiper.min.js"></script>
-
+  <script src="vendors/tiny-slider/tiny-slider.min.js"></script>
+  <script src="vendors/wnumb/wNumb.min.js"></script>
   <script src="vendors/wow/wow.js"></script>
-
+  <script src="vendors/isotope/isotope.js"></script>
+  <script src="vendors/countdown/countdown.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/twentytwenty/twentytwenty.js"></script>
+  <script src="vendors/twentytwenty/jquery.event.move.js"></script>
+  <script src="vendors/bxslider/jquery.bxslider.min.js"></script>
+  <script src="vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
   <script src="vendors/vegas/vegas.min.js"></script>
-
+  <script src="vendors/jquery-ui/jquery-ui.js"></script>
   <script src="vendors/timepicker/timePicker.js"></script>
+  <script src="vendors/particles/particles.min.js"></script>
+  <script src="vendors/particles/particles-config.js"></script>
 
 
 
@@ -395,7 +430,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-  <script src="js/izeetak.js"></script>
+  <script src="js/izeetak.js"></script>   
+
 
 </body>
 
