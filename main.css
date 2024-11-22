@@ -78,21 +78,48 @@ body {
 
 
 .sectionserviceRow {
-  overflow: hidden;
+  display: flex;
   width: 100%;
   background: linear-gradient(90deg, #00080c, #222222);
+  overflow: hidden;
+}
+
+.instaicon {
+
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.facebookicon {
+
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+.fixedIcons {
+  display: flex;
+  flex: 0 0 10%; /* Fixed space for the icons (4 columns out of 12, roughly 33.33%) */
+  align-items: center;
+  
+  padding: 10px;
+}
+
+.scrollingContent {
+  flex: 1; /* Remaining space for the scrolling content */
+  overflow: hidden;
+  position: relative;
 }
 
 .serviceRow {
   display: flex;
-  width: max-content;
-  animation: scroll 45s linear infinite;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
 }
 
 .serviceItem {
   color: #fff;
   padding: 5px 20px;
-  white-space: nowrap;
   font-size: 1.2em;
   margin-right: 30px;
 }
@@ -102,17 +129,14 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Moves by half the width of the container for a seamless scroll */
+    transform: translateX(-50%); /* Scrolls left by 50% of its width */
   }
 }
-
 
 .serviceItem::before {
   content: "";
   margin-right: 8px;
 }
-
-
 /* Right-side options (cart, sign in, country) */
 .navbar-right {
   display: flex;
@@ -1358,6 +1382,8 @@ body {
 }
 
 .social-icon:hover {
+
+
   color: #007bff;
   /* Change icon color on hover */
 }
