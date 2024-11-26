@@ -203,27 +203,27 @@
       <div class="col-md-6 product-detail-details">
         <h1 class="product-detail-title">Apple iPhone 14 Pro Max 512GB - Deep Purple</h1>
         <p class="product-detail-price text-success">AED 3,289.00</p>
-        <p class="product-detail-retail-price">
+        <!-- <p class="product-detail-retail-price">
           <del>AED 5,900.00</del>
           <span class="product-detail-discount text-danger">44% less vs. new</span>
-        </p>
+        </p> -->
         <p class="product-detail-stock-info text-danger">Limited stock: only 1 left - order now.</p>
 
         <!-- Condition Buttons -->
         <div class="btn-group d-flex product-detail-condition mb-3" role="group">
-          <button type="button" class="btn btn-outline-secondary active">Pre-Loved | Top</button>
-          <button type="button" class="btn btn-outline-secondary">Pre-Loved | Good</button>
+          <button type="button" class="btn btn-outline-secondary" style="background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);" onclick="showTopQualityColors()">Pre-Loved | Top</button>
+          <button type="button" id="goodqua" class="btn btn-outline-secondary" style="background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);" onclick="showGoodQualityColors()">Pre-Loved | Good</button>
         </div>
 
         <!-- Color Options -->
         <div class="mb-3 product-detail-color-options">
           <span>Color: </span>
           <div class="btn-group" role="group">
-            <button type="button" class="btn btn-outline-primary active">Deep Purple</button>
-            <button type="button" class="btn btn-outline-primary">Gold</button>
-            <button type="button" class="btn btn-outline-primary">Silver</button>
-            <button type="button" class="btn btn-outline-primary">Space Black</button>
-          </div>
+           
+<!-- Color Buttons -->
+<button type="button" id="silver" data-value="silver" style="display: none;" class="btn btn-outline-primary">Silver</button>
+<button type="button" id="gold" data-value="gold" style="display: none;" class="btn btn-outline-primary">Gold</button>
+<button type="button" id="spaceblack" data-value="space black" style="display: none;" class="btn btn-outline-primary">Space Black</button></div>
         </div>
 
         <!-- Storage Options -->
@@ -238,7 +238,7 @@
 
         <!-- Shipping & Warranty Info -->
         <div class="mb-3 product-detail-shipping-info">
-          <p><i class="bi bi-truck"></i> <a href="#" id="openshiping">Delivery in 3-5 business days</a></p>
+          <p><i class="bi bi-truck"></i> <a href="#" id="openshiping">Delivery in 3-4 business days</a></p>
           <p><i class="bi bi-arrow-counterclockwise"></i> <a href="#" id="openreturn">10 Days Return</a></p>
 
         </div>
@@ -600,6 +600,44 @@
 <!-- template js -->
 <script src="js/izeetak.js"></script>
   <script>
+
+
+
+function hideAllColorButtons() {
+    document.getElementById("silver").style.display = "none";
+    document.getElementById("gold").style.display = "none";
+    document.getElementById("spaceblack").style.display = "none";
+}
+
+function showTopQualityColors() {
+    hideAllColorButtons(); 
+
+    var availableColorsTop = ['silver', 'gold', 'space black'];
+
+    if (availableColorsTop.includes('silver')) {
+        document.getElementById("silver").style.display = "inline-block";
+    }
+    if (availableColorsTop.includes('gold')) {
+        document.getElementById("gold").style.display = "inline-block";
+    }
+    if (availableColorsTop.includes('space black')) {
+        document.getElementById("spaceblack").style.display = "inline-block";
+    }
+}
+
+function showGoodQualityColors() {
+    hideAllColorButtons();
+
+    var availableColorsGood = ['silver', 'space black'];
+
+    if (availableColorsGood.includes('silver')) {
+        document.getElementById("silver").style.display = "inline-block";
+    }
+    if (availableColorsGood.includes('space black')) {
+        document.getElementById("spaceblack").style.display = "inline-block";
+    }
+}
+
 
 
 
