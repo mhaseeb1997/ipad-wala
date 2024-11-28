@@ -149,6 +149,8 @@ body {
   padding: 0.2rem 0.4rem;
 }
 
+
+
 .nav-btn {
   font-family: Barlow;
   color: var(--white-color);
@@ -156,15 +158,11 @@ body {
   width: 120px;
   display: inline-block;
   vertical-align: middle;
-
   border: none;
   outline: none !important;
-
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-
-
   border-radius: 9px;
   border: 1px solid grey;
   transition: all 0.1s linear;
@@ -1161,27 +1159,19 @@ body {
    width: 140px; 
    padding:0 20px;
   color: white;
-
   text-decoration: none;
-
   position: relative;
-  
   display: inline-block;
   vertical-align: middle;
-
   border: none;
   outline: none !important;
-
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-
-
   border-radius: 9px;
   border: 1px solid grey;
   transition: all 0.1s linear;
   overflow: hidden;
-
   z-index: 1;
   text-align: center;
   text-decoration: none;
@@ -1222,6 +1212,8 @@ body {
 
 
 /* product detail css  */
+
+
 .product-detail-image-gallery {
   border: 2px solid rgb(228, 226, 226);
   border-radius: 10px;
@@ -1265,6 +1257,84 @@ body {
   width: 100%;
 }
 
+.btnconditon{
+  font-family: Barlow;
+  color: var(--text-color);
+  position: relative;
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btnconditon:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+  text-decoration: none;
+}
+
+.btnconditon:hover:after {
+  opacity: 1;
+  transform: scaleY(1.0);
+}
+
+.btnconditon:hover {
+  color: var(--white-color);
+}
+
+
+.btnconditon.active {
+  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
+  color: white; /* Ensure the text color is visible */
+  border: none; /* Optional: remove the border */
+
+}
+
+#silver{
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(174,175,177,1) 0%, rgba(238,239,241,1) 100%);
+}
+
+#gold{
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(246,226,203,1) 0%, rgba(218,197,175,1) 100%);
+
+}
+
+#spaceblack{
+  width: 80px;
+  height: 40px;
+background: linear-gradient(167deg, rgba(95,107,113,1) 0%, rgba(66,75,79,1) 100%);
+
+}
 /* STYLING FOR ADD ON AND DETAIL  */
 /* General styling for product section */
 
