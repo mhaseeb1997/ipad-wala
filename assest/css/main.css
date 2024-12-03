@@ -1335,11 +1335,71 @@ body {
 background: linear-gradient(167deg, rgba(95,107,113,1) 0%, rgba(66,75,79,1) 100%);
 
 }
+
+.proddetailbtn {
+  background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);
+   border-radius: 5px; 
+   width: 570px; 
+   height: 40px;
+  color: white;
+  
+  position: relative;
+  
+  
+  border: none;
+  outline: none !important;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+
+}
+.proddetailbtn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
+
+
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+  text-decoration: none;
+}
+
+.proddetailbtn:hover:after {
+  opacity: 1;
+  transform: scaleY(1.0);
+}
+
+.proddetailbtn:hover {
+  color: var(--white-color);
+}
+
+
+
+
 /* STYLING FOR ADD ON AND DETAIL  */
 /* General styling for product section */
 
 .product-image-card,
 .product-info-card {
+  padding: 15px 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow */
   transition: box-shadow 0.3s ease-in-out;
