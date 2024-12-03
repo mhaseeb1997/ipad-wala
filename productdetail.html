@@ -206,16 +206,11 @@
       </div>
 
       <!-- Product Details -->
-      <div class="col-md-6 product-detail-details">
+      <div class="col-md-6 product-detail-details pt-5">
         <h1 class="product-detail-title">Apple iPhone 14 Pro Max 512GB - Deep Purple</h1>
-        <p class="product-detail-price text-success">AED 3,289.00</p>
-        <!-- <p class="product-detail-retail-price">
-          <del>AED 5,900.00</del>
-          <span class="product-detail-discount text-danger">44% less vs. new</span>
-        </p> -->
+       
         <p class="product-detail-stock-info text-danger">Limited stock: only 1 left - order now.</p>
 
-        <!-- Condition Buttons -->
         <div class="btn-group d-flex product-detail-condition mb-3" role="group">
           <button type="button" class="btn  btnconditon" id="topqua"
             onclick="showTopQualityColors()">Pre-Loved | Top</button>
@@ -251,9 +246,11 @@
           </div>
         </div>
         <!-- Shipping & Warranty Info -->
+        <p class="product-detail-price" id="priceobproduct">AED 3,289.00</p>
+
         <div class="mb-3 product-detail-shipping-info">
-          <p><i class="bi bi-truck"></i> <a href="#" id="openshiping">Delivery in 3-4 business days</a></p>
-          <p><i class="bi bi-arrow-counterclockwise"></i> <a href="#" id="openreturn">10 Days Return</a></p>
+          <p><i class="bi bi-truck"></i>Delivery in 3-4 business days</p>
+          <p><i class="bi bi-arrow-counterclockwise"></i>Return 10 within Days</p>
 
         </div>
 
@@ -614,6 +611,13 @@
   <!-- template js -->
   <script src="js/izeetak.js"></script>
   <script>
+
+$(document).ready(function(){
+  showTopQualityColors();
+  silverstorage();
+});
+
+
 function resetButtonSelection() {
     const buttons = document.querySelectorAll(".btnconditon");
     buttons.forEach((button) => button.classList.remove("active"));
@@ -641,6 +645,7 @@ function resetstorageselection(){
     function showTopQualityColors() {
       hideAllColorButtons();
       resetButtonSelection(); // Deselect all quality buttons 
+      hideAllStorageButtons()
 
       document.getElementById("topqua").classList.add("active");
 
@@ -661,7 +666,7 @@ function resetstorageselection(){
       hideAllColorButtons();
 
       resetButtonSelection(); // Deselect all quality buttons 
-
+      hideAllStorageButtons()
 document.getElementById("goodqua").classList.add("active");
 
       var availableColorsGood = ['silver', 'space black'];
@@ -743,6 +748,9 @@ if(silverstoragee.includes('128GB')){
 }
 
 
+
+
+
     function toggleSearch() {
       const searchContainer = document.getElementById("searcher");
       if (searchContainer.style.display === "none" || searchContainer.style.display === "") {
@@ -785,12 +793,10 @@ if(silverstoragee.includes('128GB')){
       modalret.style.display = "flex";
     }
 
-    // Close modal when the 'x' is clicked
     closeBtnret.onclick = function () {
       modalret.style.display = "none";
     }
 
-    // Close modal when clicking outside of it
     window.onclick = function (event) {
       if (event.target == modalret) {
         modalret.style.display = "none";
@@ -798,22 +804,18 @@ if(silverstoragee.includes('128GB')){
     }
 
 
-    // Get modal for return <!-- Warranty Modal -->
     var modalwarr = document.getElementById("popupWarranty");
     var btnwarr = document.getElementById("openwarranty");
     var closeBtnwarr = document.getElementsByClassName("closeWarranty")[0];
 
-    // Open modal on button click
     btnwarr.onclick = function () {
       modalwarr.style.display = "flex";
     }
 
-    // Close modal when the 'x' is clicked
     closeBtnwarr.onclick = function () {
       modalwarr.style.display = "none";
     }
 
-    // Close modal when clicking outside of it
     window.onclick = function (event) {
       if (event.target == modalwarr) {
         modalwarr.style.display = "none";
