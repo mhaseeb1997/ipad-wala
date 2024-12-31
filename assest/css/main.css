@@ -149,8 +149,6 @@ body {
   padding: 0.2rem 0.4rem;
 }
 
-
-
 .nav-btn {
   font-family: Barlow;
   color: var(--white-color);
@@ -158,11 +156,15 @@ body {
   width: 120px;
   display: inline-block;
   vertical-align: middle;
+
   border: none;
   outline: none !important;
+
   text-align: center;
   font-size: 14px;
   font-weight: 700;
+
+
   border-radius: 9px;
   border: 1px solid grey;
   transition: all 0.1s linear;
@@ -703,8 +705,12 @@ body {
   max-width: 100%;
   /* Allow full width on small screens */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   /* Add some padding for smaller screens */
+}
+
+.footer-about-text{
+  color: #fff;
 }
 
 .footer-row {
@@ -732,12 +738,13 @@ body {
   font-size: 16px;
   /* Adjust font size for better readability */
   margin-bottom: 15px;
-  color: var(--text-color);
+  color: #fff;
   font-weight: 700;
 }
 
 .footer-links,
 .footer-contact-info {
+  color: #fff;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -750,19 +757,19 @@ body {
 
 .footer-links li a,
 .footer-contact-info li a {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   /* Adjust font size */
 }
 
 .footer-social {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   /* Space between icons */
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  /* justify-content: center;
+  align-items: center; */
+
 }
 
 .footer-social a {
@@ -770,12 +777,12 @@ body {
   /* Light background for the circle */
   border-radius: 50%;
   /* Makes the background a circle */
-  padding: 15px;
+  padding: 10px;
   /* Spacing around the icon */
   display: inline-block;
   transition: background-color 0.3s ease;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -783,7 +790,7 @@ body {
 }
 
 .footer-social a:hover {
-  background-color: #a09f9f;
+  background-color: #9b9a9a;
   /* Hover effect */
 }
 
@@ -798,16 +805,17 @@ body {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   font-size: 12px;
   /* Adjust font size for footer text */
-  border-top: 1px dotted #444;
+  border-top: 1px dotted #949393;
   padding-top: 10px;
   /* Reduce padding for smaller screens */
 }
 
 .footer-bottom p {
   margin: 0;
+  color: #fff;
 }
 
 .footer-container:before {
@@ -913,19 +921,59 @@ body {
   color: #555;
 }
 
+
+
+
+
 .shop-btn {
-  padding: 12px 25px;
-  background-color: #000;
-  color: #fff;
+  font-family: Barlow;
+  color: black;
+  position: relative;
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
   border: none;
-  border-radius: 25px;
+  outline: none !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 9px;
+  border: 1px solid grey;
+  transition: all 0.1s linear;
+  overflow: hidden;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  text-align: center;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+}
+
+.shop-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(0deg,  rgb(18, 92, 57) 0%,rgb(40, 182, 118)  100%);
+  transition-delay: .1s;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  transition-property: all;
+  opacity: 1;
+  transform-origin: bottom;
+  transform-style: preserve-3d;
+  transform: scaleY(0);
+  z-index: -1;
+  text-decoration: none;
+}
+
+.shop-btn:hover:after {
+  opacity: 1;
+  transform: scaleY(1.0);
 }
 
 .shop-btn:hover {
-  background-color: #333;
+  color: var(--white-color);
 }
 
 /* Styling for the image section */
@@ -1105,115 +1153,83 @@ body {
 /* <!-- product section  --> */
 
 /* Container for product cards */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+/* Individual product card styling */
 .product-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
   background-color: #fff;
-  padding: 10px;
-  transition: box-shadow 0.3s ease;
-  width: 80%;
-  margin-bottom: 50px;
-}
-
-.product-card:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.20);
-}
-
-.product-image img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
   width: 100%;
+  max-width: 220px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100%;
   height: auto;
-  max-height: 300px;
-  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.product-info {
-  text-align: left;
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: var(--text-color);
 }
 
-.product-name {
-  font-size: 0.9em;
-  font-weight: 600;
-  color: #333;
-  margin: 0 0 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.product-condition,
-.current-price,
-.delivery-info {
-  font-size: 0.8em;
+.product-card p {
+  font-size: 0.9rem;
+  color: var(--text-color);
   margin: 5px 0;
 }
 
-
-
-
-
-
-
-.proddetail a {
-  background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);
-   border-radius: 5px; 
-   width: 140px; 
-   padding:0 20px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  border: none;
-  outline: none !important;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 9px;
-  border: 1px solid grey;
-  transition: all 0.1s linear;
-  overflow: hidden;
-  z-index: 1;
-  text-align: center;
-  text-decoration: none;
-
-}
-.proddetail a:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
-
-
-  transition-delay: .1s;
-  transition-timing-function: ease-in-out;
-  transition-duration: .3s;
-  transition-property: all;
-  opacity: 1;
-  transform-origin: bottom;
-  transform-style: preserve-3d;
-  transform: scaleY(0);
-  z-index: -1;
-  text-decoration: none;
+/* Price and discount styling */
+.price {
+  margin-top: 10px;
 }
 
-.proddetail a:hover:after {
-  opacity: 1;
-  transform: scaleY(1.0);
+.current-price {
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
 }
 
-.proddetail a:hover {
-  color: var(--white-color);
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.discount {
+  display: block;
+  color: #28a745;
+  font-size: 0.9rem;
+}
+
+/* Delivery information */
+.delivery {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
 
 
 /* product detail css  */
-
-
 .product-detail-image-gallery {
   border: 2px solid rgb(228, 226, 226);
   border-radius: 10px;
@@ -1241,7 +1257,6 @@ body {
 .product-detail-price {
   font-size: 24px;
   font-weight: bold;
-  color: #141414;
 }
 
 .product-detail-title {
@@ -1258,149 +1273,11 @@ body {
   width: 100%;
 }
 
-.btnconditon{
-  font-family: Barlow;
-  color: var(--text-color);
-  position: relative;
-  width: 120px;
-  display: inline-block;
-  vertical-align: middle;
-  border: none;
-  outline: none !important;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 5px;
-  border: 1px solid grey;
-  transition: all 0.1s linear;
-  overflow: hidden;
-  letter-spacing: 0.2em;
-  z-index: 1;
-  text-align: center;
-  text-decoration: none;
-}
-
-.btnconditon:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
-  transition-delay: .1s;
-  transition-timing-function: ease-in-out;
-  transition-duration: .3s;
-  transition-property: all;
-  opacity: 1;
-  transform-origin: bottom;
-  transform-style: preserve-3d;
-  transform: scaleY(0);
-  z-index: -1;
-  text-decoration: none;
-}
-
-.btnconditon:hover:after {
-  opacity: 1;
-  transform: scaleY(1.0);
-}
-
-.btnconditon:hover {
-  color: var(--white-color);
-}
-
-
-.btnconditon.active {
-  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
-  color: white; /* Ensure the text color is visible */
-  border: none; /* Optional: remove the border */
-
-}
-
-#silver{
-  width: 80px;
-  height: 40px;
-  background: linear-gradient(0deg, rgba(174,175,177,1) 0%, rgba(238,239,241,1) 100%);
-}
-
-#gold{
-  width: 80px;
-  height: 40px;
-  background: linear-gradient(0deg, rgba(246,226,203,1) 0%, rgba(218,197,175,1) 100%);
-
-}
-
-#spaceblack{
-  width: 80px;
-  height: 40px;
-background: linear-gradient(167deg, rgba(95,107,113,1) 0%, rgba(66,75,79,1) 100%);
-
-}
-
-.proddetailbtn {
-  background: linear-gradient(9deg, rgba(12, 64, 40, 1) 0%, rgba(25, 111, 72, 1) 100%);
-   border-radius: 5px; 
-   width: 640px; 
-   height: 40px;
-  color: white;
-  
-  position: relative;
-  
-  
-  border: none;
-  outline: none !important;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 5px;
-  border: 1px solid grey;
-  transition: all 0.1s linear;
-  overflow: hidden;
-  z-index: 1;
-  text-align: center;
-  text-decoration: none;
-
-}
-.proddetailbtn:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  background: linear-gradient(9deg, rgb(4, 51, 29) 0%, rgb(25, 216, 130) 100%);
-
-
-  transition-delay: .1s;
-  transition-timing-function: ease-in-out;
-  transition-duration: .3s;
-  transition-property: all;
-  opacity: 1;
-  transform-origin: bottom;
-  transform-style: preserve-3d;
-  transform: scaleY(0);
-  z-index: -1;
-  text-decoration: none;
-}
-
-.proddetailbtn:hover:after {
-  opacity: 1;
-  transform: scaleY(1.0);
-}
-
-.proddetailbtn:hover {
-  color: var(--white-color);
-}
-
-
-
-
 /* STYLING FOR ADD ON AND DETAIL  */
 /* General styling for product section */
 
 .product-image-card,
 .product-info-card {
-  padding: 15px 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Subtle shadow */
   transition: box-shadow 0.3s ease-in-out;
@@ -1424,7 +1301,7 @@ background: linear-gradient(167deg, rgba(95,107,113,1) 0%, rgba(66,75,79,1) 100%
 }
 
 .product-image-card .card-body {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 /* Product Info Card */
@@ -1454,6 +1331,13 @@ background: linear-gradient(167deg, rgba(95,107,113,1) 0%, rgba(66,75,79,1) 100%
   font-size: 0.9rem;
   color: var(--text-color);
 }
+
+
+
+
+
+
+
 
 
 
