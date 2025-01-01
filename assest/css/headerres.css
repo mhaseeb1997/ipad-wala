@@ -132,6 +132,7 @@
     
 
     .main-menu-wrapper__logo {
+        margin-top: 15px;
         margin-right: 50px;
     }
 
@@ -181,6 +182,7 @@
     }
 
     .main-menu-wrapper__logo {
+        margin-top: 25px;
         margin-right: 0;
     }
 

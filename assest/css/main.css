@@ -1676,12 +1676,12 @@ body {
 /* scroll to top */
 .scroll-to-top {
   display: inline-block;
-  width: 45px;
-  height: 45px;
-  background: #3f4655;
+  width: 35px;
+  height: 35px;
+  background: #089b20;
   position: fixed;
-  bottom: 85px;
-  right: 35px;
+  bottom: 100px;
+  right: 40px;
   z-index: 99;
   text-align: center;
   -webkit-transition: all 0.4s ease;
@@ -1694,7 +1694,7 @@ body {
 .scroll-to-top i {
   color: #ffffff;
   font-size: 18px;
-  line-height: 45px;
+  line-height: 35px;
 }
 
 .scroll-to-top:hover {
@@ -2009,3 +2009,236 @@ body {
   border-radius: 5px;
 }
 
+/* about hero section */
+
+
+.hero {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hero .content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .content button:hover {
+  background-color: #0056b3;
+}
+
+ /* Responsive Design */
+ @media (max-width: 1024px) {
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+
+  .hero .content p {
+    font-size: 0.9rem;
+  }
+
+  .hero .content button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  
+}
+
+/* about our value portion */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.hero .content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero .content button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+
+  .hero .content p {
+    font-size: 0.9rem;
+  }
+
+  .hero .content button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.values {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.value-item {
+  background-color: #ebeaea;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 22%;
+  box-shadow: 0 4px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.value-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.value-item h3 {
+  font-size: 1.5rem;
+  color: rgba(25, 111, 72, 1);
+  margin-bottom: 0.5rem;
+}
+
+.value-item p {
+  font-size: 1rem;
+  color: #242424;
+}
+
+@media (max-width: 768px) {
+  .value-item {
+    width: 45%;
+  }
+}
