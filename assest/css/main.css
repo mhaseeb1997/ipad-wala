@@ -78,6 +78,7 @@ body {
 
 
 .sectionserviceRow {
+  height: 40%;
   display: flex;
   width: 100%;
   background: linear-gradient(90deg, #00080c, #222222);
@@ -119,8 +120,8 @@ body {
 
 .serviceItem {
   color: #fff;
-  padding: 5px 20px;
-  font-size: 1.2em;
+  padding: 0 20px;
+  font-size: 1em;
   margin-right: 30px;
 }
 
