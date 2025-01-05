@@ -216,45 +216,7 @@ body {
   color: #0d6efd;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  background-color: #f9f9f9;
-}
 
-.hero-text {
-  max-width: 50%;
-}
-
-.hero-text h1 {
-  font-size: 3em;
-  color: var(--text-color);
-}
-
-.hero-text p {
-  font-size: 1.2em;
-  color: #555;
-  margin-top: 20px;
-}
-
-.hero-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 30px;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1em;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
-
-.hero-btn:hover {
-  background-color: #444;
-}
 
 /*--------------------------------------------------------------
 # Main Slider
@@ -2012,185 +1974,34 @@ body {
 /* about hero section */
 
 
-.hero {
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 2rem;
+.hero-section {
   height: 100vh;
-  color: #fff;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.hero .content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-}
-
-.hero .content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero .content p {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.hero .content button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero .content button:hover {
-  background-color: #0056b3;
-}
-
- /* Responsive Design */
- @media (max-width: 1024px) {
-  .hero .content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero .content p {
-    font-size: 1rem;
-  }
-}
-
+/* Media Query for Mobile Screens */
 @media (max-width: 768px) {
-  .hero .content h1 {
-    font-size: 2rem;
+  .hero-section {
+    height: auto; /* Allow the height to adjust to content */
+    width: 100%;
   }
 
-  .hero .content p {
-    font-size: 0.9rem;
+  .hero-section img {
+    object-fit: contain; /* Ensure the image fits well in mobile view */
+    height: auto;
   }
-
-  .hero .content button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-
-  
 }
-
 /* about our value portion */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 2rem;
-  height: 100vh;
-  color: #fff;
-  text-align: center;
-}
 
-.hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.hero .content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
-}
-
-.hero .content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero .content p {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-}
-
-.hero .content button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.hero .content button:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .hero .content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero .content p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero .content h1 {
-    font-size: 2rem;
-  }
-
-  .hero .content p {
-    font-size: 0.9rem;
-  }
-
-  .hero .content button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
 
 .values {
   padding: 4rem 2rem;
@@ -2240,5 +2051,19 @@ body {
 @media (max-width: 768px) {
   .value-item {
     width: 45%;
+    height: 50%;
   }
+
+  .value-item h3 {
+    font-size: 1rem;
+    color: rgba(25, 111, 72, 1);
+    margin-bottom: 0.5rem;
+  }
+  
+  .value-item p {
+    font-size: 0.9rem;
+    color: #242424;
+    line-height: 0.9rem;
+  }
+  
 }
