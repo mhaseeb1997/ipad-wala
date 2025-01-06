@@ -869,11 +869,13 @@ body {
 
 /* Styling for the text section */
 .product-text {
-  max-width: 500px;
-  margin-right: 40px;
+  
+  
+  justify-content: center;
+  text-align: center;
 }
 
-.product-text h1 {
+.product-text h3{
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
