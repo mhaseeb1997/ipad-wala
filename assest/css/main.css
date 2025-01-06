@@ -850,7 +850,7 @@ body {
 }
 
 /* General section styling for mackbook section*/
-.product-section {
+.productp-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -859,6 +859,69 @@ body {
 }
 
 /* Container for both text and image */
+.productp-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Styling for the text section */
+.productp-text {
+  
+  
+  justify-content: center;
+  text-align: center;
+}
+
+.productp-text h3{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.productp-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.productp-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+/* Container for both text and image */
+.productp-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Styling for the text section */
+.productp-text {
+  
+  
+  justify-content: center;
+  text-align: center;
+}
+
+.productp-text h3{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.productp-text p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
 .product-content {
   display: flex;
   justify-content: space-between;
@@ -869,13 +932,11 @@ body {
 
 /* Styling for the text section */
 .product-text {
-  
-  
-  justify-content: center;
-  text-align: center;
+  max-width: 500px;
+  margin-right: 40px;
 }
 
-.product-text h3{
+.product-text h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -885,7 +946,6 @@ body {
   margin-bottom: 30px;
   color: #555;
 }
-
 
 
 
