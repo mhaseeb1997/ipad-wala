@@ -42,15 +42,10 @@
 
   <!-- First Navbar (Logo, Search, Icons) -->
    <!-- First Navbar (Logo, Search, Icons) -->
-   <header class="main-header ">
-    <nav class="main-menu clearfix">
-      <div class="container">
+ 
+
+    <nav class="main-menu ">
         <div class="main-menu-wrapper clearfix">
-            <div class="main-menu-wrapper-inner clearfix">
-                <div class="main-menu-wrapper__left clearfix">
-                    <div class="main-menu-wrapper__logo">
-                        <a href="index.html"><img src="images/ipadwrittenblack.png" width="100"  alt=""></a>
-                    </div>
                     <div class="main-menu-wrapper__main-menu">
                       <button class="btn sbtn d-lg-none" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
                         <i class="bi bi-search" style="color: aliceblue;"> </i>
@@ -70,18 +65,22 @@
                             <li><a href="aboutus.html">About</a></li>
                         </ul>
                     </div>
-                </div>
+              
+                <div class="main-menu-wrapper__logo">
+                  <a href="index.html"><img src="images/ipadwrittenblack.png" width="140px"  alt=""></a>
+              </div>
                 <div class="main-menu-wrapper__right">
                     <div class="main-menu-wrapper__search-box-cart-box">
                       <button class="btn" style="margin-right: 20px;" type="button" onclick="toggleSearch()">
                         <i class="bi bi-search" style="color: aliceblue;"> </i>
                       </button>
+                      <a href="registration.html" class="main-menu-wrapper__cart "><i class="fa-regular fa-user fa-sm" style="color: #fcfcfc;"></i></a>
+
                       <div class="flags d-flex align-items-center">
                         <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
                           style="margin-right: 20px;" alt="Pakistan Flag" width="30" height="20">
                       </div>
-                        <a href="registration.html" class="main-menu-wrapper__cart "><i class="fa-regular fa-user fa-sm" style="color: #fcfcfc;"></i></a>
                     </div>
                 </div> 
             </div>
@@ -93,11 +92,9 @@
                 </button>
               </div>
             </div> 
-        </div>      
-      </div>
     </nav>
     
-</header>
+
  
 
 
@@ -290,11 +287,11 @@
     <div class="mobile-nav__overlay mobile-nav__toggler"></div>
     <!-- /.mobile-nav__overlay -->
     <div class="mobile-nav__content">
+      <div class="logo-box">
+        <a href="index.html" aria-label="logo image"><img src="images/ipadwrittenblack.png" width="100" alt="" /></a>
+    </div>
         <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
-        <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="images/ipadwrittenblack.png" width="100" alt="" /></a>
-        </div>
         <!-- /.logo-box -->
         <div class="mobile-nav__container"></div>
         <div class="mobile-nav__top">

@@ -15,75 +15,84 @@
   <link rel="stylesheet" href="assest/css/Responsive.css">
     <link rel="stylesheet" href="assest/css/header.css">
   <link rel="stylesheet" href="assest/css/headerres.css">
+<style>
+  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #004d26; /* Dark green background */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #005f30; /* Slightly lighter green */
+  color: white;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.nav-logo {
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.nav-right .nav-icon {
+  background: none;
+  border: none;
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-right .nav-icon:hover {
+  opacity: 0.8;
+}
+
+</style>
 </head>
 
 <body>
   <!-- First Navbar (Logo, Search, Icons) -->
-  <nav class="navbar navbar-light bg-light py-2 border-bottom">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center w-100">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="your-logo-here.png" alt="IpAD WALE" width="150" />
-        </a>
-
-        <!-- Search bar for larger screens -->
-        <form class="d-flex mx-auto w-50 d-none d-lg-flex">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
-            aria-label="Search" />
-          <button class="btn btn-outline-dark" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-
-        <!-- Right-side options (hidden on mobile until toggled) -->
-        <div class="navbar-right d-none d-lg-flex align-items-center">
-          <!-- Country select -->
-          <div class="flags d-flex align-items-center">
-            <img src="images/UAEflag.png" alt="UAE Flag" width="30" height="20" class="me-2" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg" alt="Pakistan Flag"
-              width="30" height="20" />
-          </div>
-          <!-- Cart icon -->
-          <a href="#" class="me-3"><i class="bi bi-cart"></i> Cart
-            <span class="badge bg-danger">0</span></a>
-          <!-- Sign-in -->
-          <a href="#"><i class="bi bi-person"></i> Sign In</a>
-        </div>
-
-        <!-- Toggle button for mobile view -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-      <!-- Search bar and right-side options for mobile view (inside the collapse) -->
-      <div class="collapse navbar-collapse d-lg-none" id="navbarMenu">
-        <form class="d-flex mt-3 w-100">
-          <input class="form-control me-2" type="search" placeholder="Search pre-loved & never-used products"
-            aria-label="Search" />
-          <button class="btn btn-outline-dark" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
-        </form>
-
-        <!-- Right-side options for mobile -->
-        <div class="navbar-right d-flex flex-column mt-3">
-          <!-- Country select -->
-          <select class="form-select mb-2" aria-label="Country select" style="width: 100px">
-            <option selected>UAE</option>
-            <option value="1">KSA</option>
-          </select>
-          <!-- Language icon -->
-          <a href="#" class="mb-2"><i class="bi bi-globe"></i> عربي</a>
-          <!-- Cart icon -->
-          <a href="#" class="mb-2"><i class="bi bi-cart"></i> Cart
-            <span class="badge bg-danger">0</span></a>
-          <!-- Sign-in -->
-          <a href="#"><i class="bi bi-person"></i> Sign In</a>
-        </div>
-      </div>
+  <nav class="navbar">
+    <div class="nav-left">
+      <button class="menu-btn">
+        <span class="menu-icon">☰</span>
+        <span class="menu-text">Menu</span>
+      </button>
+    </div>
+    <div class="nav-center">
+      <img src="images/ipadwrittenblack.png" alt="Logo" class="nav-logo">
+    </div>
+    <div class="nav-right">
+      <button class="nav-icon"><i class="search-icon">🔍</i></button>
+      <button class="nav-icon"><i class="location-icon">📍</i></button>
+      <button class="nav-icon"><i class="heart-icon">❤️</i></button>
     </div>
   </nav>
 
