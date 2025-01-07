@@ -2058,7 +2058,7 @@ body {
   .hero-section img {
     object-fit: contain; /* Ensure the image fits well in mobile view */
     height: auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 /* about our value portion */
