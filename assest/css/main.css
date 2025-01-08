@@ -2069,14 +2069,15 @@ body {
 
 
 .values {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
   background-color: #fff;
 }
 
 .values h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+ 
   color: #333;
 }
 
