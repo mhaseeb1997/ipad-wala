@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 /* Basic styles */
 
 body {
@@ -854,8 +856,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 10px 0 20px 0;
   background-color: #fff;
+   font-family: 'Montserrat', sans-serif;
 }
 
 /* Container for both text and image */
@@ -876,12 +879,14 @@ body {
 }
 
 .productp-text h3{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
+  color: #222222;
+
 }
 
 .productp-text p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 600;
@@ -890,38 +895,9 @@ body {
   padding: 0 10px;
 }
 
-.productp-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-  background-color: #fff;
-}
 
-/* Container for both text and image */
-.productp-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-}
 
-/* Styling for the text section */
-.productp-text {
-  justify-content: center;
-  text-align: center;
-}
 
-.productp-text h3{
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.productp-text p {
-  font-size: 1.3rem;
-  color: #111111;
-}
 
 .product-content {
   display: flex;
@@ -2069,16 +2045,18 @@ body {
 
 
 .values {
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .values h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
  
-  color: #333;
+  color: #222222;
+
 }
 
 .values-container {
@@ -2093,7 +2071,7 @@ body {
   border-radius: 8px;
   padding: 1.5rem 1.5rem 0 1.5rem;
   width: 22%;
-  box-shadow: 0 4px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px 6px rgba(192, 191, 191, 0.1);
   text-align: center;
 }
 
