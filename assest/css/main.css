@@ -871,7 +871,7 @@ body {
 .productp-text {
   
   
-  justify-content: center;
+  justify-content:center;
   text-align: center;
 }
 
@@ -885,7 +885,9 @@ body {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #555;
+  color: #222222;
+  text-align: justify;
+  padding: 0 10px;
 }
 
 .productp-section {
@@ -2101,13 +2103,13 @@ body {
 }
 
 .value-item h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: rgba(25, 111, 72, 1);
   margin-bottom: 0.5rem;
 }
 
 .value-item p {
-
+font-weight: 600;
   font-size: 1rem;
   color: #fcfcfc;
 }
@@ -2123,10 +2125,13 @@ body {
     color: rgba(25, 111, 72, 1);
     margin-bottom: 1rem;
   }
-  
+ 
   .value-item p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fcfcfc;
+  
     font-size: 0.8rem;
-    color: #242424;
     line-height: 1rem;
   }
   
@@ -2143,6 +2148,16 @@ body {
 
   .whychooseforPhone{
     display: block;
+  }
+
+  .productp-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0e0e0e;
+    text-align: justify;
+    padding: 0 30px;
   }
   
 }
