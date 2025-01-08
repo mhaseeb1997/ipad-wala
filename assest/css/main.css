@@ -2118,21 +2118,32 @@ font-weight: 600;
 @media (max-width: 768px) {
   .value-item {
     width: 45%;
-    height: 50%;
+    height: auto;
   }
-
+  .value-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
   .value-item h3 {
     font-size: 1rem;
     color: rgba(25, 111, 72, 1);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
- 
+
+  .values {
+    padding: 1rem 2rem 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
   .value-item p {
-    font-weight: 600;
-    font-size: 1rem;
+    
+    font-size: 13px;
     color: #fcfcfc;
   
-    font-size: 0.8rem;
+    
     line-height: 1rem;
   }
   
