@@ -1,17 +1,7 @@
 /*--------------------------------------------------------------
 # Navigations One
 --------------------------------------------------------------*/
-.main-header {
-  position: relative;
-  display: block;
-  background: linear-gradient(
-    9deg,
-    rgba(12, 64, 40, 1) 0%,
-    rgba(25, 111, 72, 1) 100%
-  );
-  height: 90px;
-  margin: 0 0 0 0;
-}
+
 
 .main-menu {
   position: relative;
@@ -28,7 +18,6 @@
   position: relative;
   display: block;
 }
-
 
 
 
@@ -398,9 +387,34 @@
 
 #searcher {
   display: none;
-  margin: auto;
-  width: 300px;
+ 
 }
+
+/* Container for the search field */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #2a674b;
+  border-radius: 30px;
+  width: 150px;
+
+  margin:15px 0 5px 0;
+  /* Added padding for better alignment */
+}
+
+/* Styling the search input */
+.search-input {
+  line-height: normal;
+  width: 40%;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+}
+
 
 .mobile-nav__content {
   width: 300px;

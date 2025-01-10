@@ -31,30 +31,6 @@ body {
 }
 
 
-/* Container for the search field */
-.search-container {
-  display: flex;
-  align-items: center;
-  background: #2a674b;
-  border-radius: 30px;
-  width: 250px;
-
-  margin: 5px auto;
-  /* Added padding for better alignment */
-}
-
-/* Styling the search input */
-.search-input {
-  line-height: normal;
-  width: 40%;
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 5px 15px;
-  font-size: 16px;
-  color: white;
-  background-color: transparent;
-}
 
 /* Placeholder text color */
 .search-input::placeholder {
