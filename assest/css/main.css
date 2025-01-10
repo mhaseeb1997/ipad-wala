@@ -37,8 +37,8 @@ body {
   align-items: center;
   background: #2a674b;
   border-radius: 30px;
-  width: 100%;
-  max-width: 1900px;
+  width: 250px;
+
   margin: 5px auto;
   /* Added padding for better alignment */
 }
@@ -46,11 +46,11 @@ body {
 /* Styling the search input */
 .search-input {
   line-height: normal;
-  width: 90%;
+  width: 40%;
   flex: 1;
   border: none;
   outline: none;
-  padding: 10px 15px;
+  padding: 5px 15px;
   font-size: 16px;
   color: white;
   background-color: transparent;
@@ -872,8 +872,6 @@ body {
 
 /* Styling for the text section */
 .productp-text {
-  
-  
   justify-content:center;
   text-align: center;
 }
@@ -881,7 +879,7 @@ body {
 .productp-text h3{
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #222222;
+  color: #141414;
 
 }
 
@@ -2045,6 +2043,8 @@ body {
 
 
 .values {
+
+
   padding: 2rem 2rem;
   text-align: center;
   background-color: #fff;
@@ -2052,10 +2052,9 @@ body {
 }
 
 .values h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
- 
-  color: #222222;
+  color: #141414;
 
 }
 
