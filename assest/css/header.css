@@ -537,7 +537,10 @@
     display: none;
 }
 
-@media (width < 450px) {
+@media (width < 600px) {
+    .main-menu{
+        padding: 0px 50px;
+    }
     .flags {
         display: none !important;
     }
