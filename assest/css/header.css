@@ -68,8 +68,8 @@
 }
 
 .main-menu-wrapper__cart {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 17px;
 }
 
 .main-menu-wrapper__search:hover {
@@ -392,8 +392,8 @@
 .search-container {
     display: flex;
     align-items: center;
-    background: #2a674b;
-    border-radius: 30px;
+    background: #347959;
+    border-radius: 5px;
     width: 250px;
 
     margin: 15px 0 5px 0;
@@ -407,7 +407,7 @@
     flex: 1;
     border: none;
     outline: none;
-    padding: 5px 15px;
+    padding: 0 15px;
     font-size: 16px;
     color: white;
     background-color: transparent;
