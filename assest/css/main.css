@@ -898,9 +898,14 @@ body {
 }
 
 .product-text p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #555;
+  font-size: 1rem;
+  
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #222222;
+  
+  
+  
 }
 
 
@@ -1273,7 +1278,12 @@ body {
 }
 
 .product-section {
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 20px 0;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Product Image Card */
