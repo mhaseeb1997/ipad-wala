@@ -39,12 +39,7 @@
 <body>
 
 <section class="sectionserviceRow">
-    <!-- Fixed Icon Section (4 columns) -->
-    <!-- <div class="fixedIcons">
-      <a href="https://www.facebook.com/profile.php?id=61565411637604&mibextid=ZbWKwL" target="_blank" class="facebookicon"><i class="fab fa-facebook"> </i></a>
-      <a href="https://www.instagram.com/codes.bunny?igsh=MjU2aXl1eWRwa2Q2" target="_blank" class="instaicon"><i class="fab fa-instagram"> </i></a>
-    </div> -->
-
+   
     <!-- Scrolling Content Section (8 columns) -->
     <div class="scrollingContent">
         <div class="serviceRow">
@@ -126,11 +121,23 @@
     </div>
 </nav>
 
-<section class="homehero-section">
-    <div class="row">
-        <img src="images/HomeHeroSec1.png" decoding="async" alt="Hero Background Image">
+<section class="hOomehero-section">
+    <div class="home-hero-carousel owl-carousel owl-theme">
+        <div class="slider-item">
+            <img src="images/HomeHeroSec1.png" alt="Hero Image 1" />
+
+        </div>
+        <div class="slider-item">
+            <img src="images/HomeHeroSec2.png" alt="Hero Image 2" />
+
+        </div>
+        <div class="slider-item">
+            <img src="images/HomeHeroSec3.png" alt="Hero Image 3" />
+        </div>
     </div>
 </section>
+
+
 
 <!-- <section class="main-slider">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
@@ -610,6 +617,30 @@
 
 <script>
 
+$(document).ready(function () {
+    $(".home-hero-carousel").owlCarousel({
+        items: 1, 
+        loop: true, 
+        margin: 0, 
+        autoplay: true, 
+        autoplayTimeout: 4000, 
+        autoplayHoverPause: true, 
+        nav: true, 
+        navText: ["<", ">"], 
+        dots: true, 
+        responsive: {
+            0: {
+                items: 1 
+            },
+            768: {
+                items: 1
+            },
+            1200: {
+                items: 1
+            }
+        }
+    });
+});
 
     function toggleSearch() {
         const searchContainer = document.getElementById("searcher");
