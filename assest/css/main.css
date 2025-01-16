@@ -2221,9 +2221,17 @@ body {
 
 
 .hOomehero-section {
+  
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.hOomehero-section img{
+  padding: 40px;
+  border-radius: 60px;
+
+
 }
 
 .home-hero-carousel .slider-item {
