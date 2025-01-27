@@ -2227,9 +2227,7 @@ body {
 }
 
 
-
 .hOomehero-section {
-
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -2249,4 +2247,49 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* Style the navigation arrows */
+.home-hero-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* Prevent blocking clicks on the image */
+}
+
+.home-hero-carousel .owl-nav button {
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto; /* Allow clicks on the arrows */
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+}
+
+/* Left arrow */
+.home-hero-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 15px;
+}
+
+/* Right arrow */
+.home-hero-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 15px;
+}
+
+/* Hover effects */
+.home-hero-carousel .owl-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
 }
