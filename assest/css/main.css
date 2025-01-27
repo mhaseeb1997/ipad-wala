@@ -2279,17 +2279,24 @@ body {
 /* Left arrow */
 .home-hero-carousel .owl-nav button.owl-prev {
   position: absolute;
-  left: 15px;
+  left: 30px;
+
+  background-color: rgba(253, 252, 252, 0.4);
+    border-radius: 130px;
 }
 
 /* Right arrow */
 .home-hero-carousel .owl-nav button.owl-next {
   position: absolute;
-  right: 15px;
+  right: 30px;
+  
+
+  background-color: rgba(253, 252, 252, 0.4);
+    border-radius: 130px;
 }
 
 /* Hover effects */
 .home-hero-carousel .owl-nav button:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(214, 64, 64, 0.6);
   color: #fff;
 }
