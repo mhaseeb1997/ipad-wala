@@ -528,7 +528,25 @@
     justify-content: center;
     margin: auto;
   }
+  
+  .feature-box {
+    background-color: #fff;
+    min-height: 50px;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    width: 330px;
+    margin: auto;
+}
 
+.feature-box p {
+  color: #535353;
+  /* Muted text color for descriptions */
+  margin-bottom: 0;
+}
+
+#prohide{
+  display: none;
+}
   
 
 }
