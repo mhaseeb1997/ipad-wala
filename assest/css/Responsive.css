@@ -570,4 +570,8 @@
         width: 50% !important;
         margin: auto;
     }
+    .our-product-condition{
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
