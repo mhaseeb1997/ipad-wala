@@ -521,7 +521,7 @@
         max-width: 320px;
         margin: auto;
         padding: 8px;
-        box-shadow:0 2px 3px rgba(0, 0, 0, 0.1)
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1)
     }
 
     .product-image img {
@@ -558,7 +558,7 @@
     }
 
     .product-card p {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .price .current-price {
@@ -568,26 +568,44 @@
     .product-name {
         font-size: 20px !important;
     }
-    .endless-possibilities img{
+
+    .endless-possibilities img {
         width: 50% !important;
         margin: auto;
     }
-    .our-product-condition{
+
+    .our-product-condition {
         font-size: 14px;
         line-height: 22px;
     }
+
     .review-text {
-        font-size:12px;
+        font-size: 12px;
         margin: 0;
     }
-    .home-hero-carousel .owl-nav button{
+
+    .home-hero-carousel .owl-nav button {
         height: 30px;
         width: 30px;
     }
-    .counter-desc{
+
+    .counter-desc {
         font-size: 9px;
     }
-    .product-condition{
+
+    .product-condition {
         font-size: 10px !important;
+    }
+
+    .price .discounted-price {
+        margin: -15px 0 0 0;
+    }
+
+    .price {
+        margin-top: -10px;
+    }
+
+    .discounted-price {
+        font-size: 10px !important
     }
 }
