@@ -74,12 +74,10 @@
 
 @media (min-width: 371px) and (max-width: 450px) {
     .main-menu-wrapper__logo {
-        justify-content: center;
         position: relative;
-
         margin-top: 16px;
         padding-top: 8px;
-        margin-left: 80px;
+        margin-left: 40px;
     }
 
 

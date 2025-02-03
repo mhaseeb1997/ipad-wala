@@ -99,7 +99,9 @@ a {
     animation: scroll 30s linear infinite;
     white-space: nowrap;
 }
-
+.head-logo{
+    width: 250px;
+}
 .serviceItem {
     color: #fff;
     padding: 0 20px;
