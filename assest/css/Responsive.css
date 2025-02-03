@@ -580,4 +580,14 @@
         font-size:12px;
         margin: 0;
     }
+    .home-hero-carousel .owl-nav button{
+        height: 30px;
+        width: 30px;
+    }
+    .counter-desc{
+        font-size: 9px;
+    }
+    .product-condition{
+        font-size: 12px !important;
+    }
 }
