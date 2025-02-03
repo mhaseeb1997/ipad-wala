@@ -576,4 +576,8 @@
         font-size: 14px;
         line-height: 22px;
     }
+    .review-text {
+        font-size:12px;
+        margin: 0;
+    }
 }
